@@ -1,0 +1,1 @@
+../../../WBLoadingIndicatorView/WBLoadingIndicatorView/WBAnimations/WBActivityIndicatorShape.h
