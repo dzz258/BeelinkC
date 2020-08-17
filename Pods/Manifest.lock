@@ -18,6 +18,13 @@ PODS:
   - Masonry (1.1.0)
   - MJExtension (3.2.1)
   - MJRefresh (3.3.1)
+  - ReactiveCocoa (2.5.2):
+    - ReactiveCocoa/UI (= 2.5.2)
+  - ReactiveCocoa/Core (2.5.2):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5.2)
+  - ReactiveCocoa/UI (2.5.2):
+    - ReactiveCocoa/Core
   - SDCycleScrollView (1.80):
     - SDWebImage (>= 5.0.0)
   - SDWebImage (5.4.0):
@@ -34,6 +41,7 @@ DEPENDENCIES:
   - Masonry
   - MJExtension
   - MJRefresh
+  - ReactiveCocoa (from `https://github.com/zhao0/ReactiveCocoa.git`, tag `2.5.2`)
   - SDCycleScrollView
   - SDWebImage
   - SPAlertController (~> 3.0.1)
@@ -51,17 +59,28 @@ SPEC REPOS:
     - SPAlertController
     - WBLoadingIndicatorView
 
+EXTERNAL SOURCES:
+  ReactiveCocoa:
+    :git: https://github.com/zhao0/ReactiveCocoa.git
+    :tag: 2.5.2
+
+CHECKOUT OPTIONS:
+  ReactiveCocoa:
+    :git: https://github.com/zhao0/ReactiveCocoa.git
+    :tag: 2.5.2
+
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   IQKeyboardManager: 72b359cd7e777e3a984cedbe05f8da45320cbb63
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  ReactiveCocoa: 3ff25b1bd992ac79c5c79b26b6c0c1713b715bb2
   SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
   SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
   SPAlertController: 174db68db4b5b59b426df4fe77b1bd466b5e7f8f
   WBLoadingIndicatorView: b3847faf2f916c4aedf57067fc59eda205d05227
 
-PODFILE CHECKSUM: d7ab435bc0f9d523e37b15b30bd35d0b514a89e6
+PODFILE CHECKSUM: 87b3eaf5b9018b70db64894393c49f786027d6c6
 
 COCOAPODS: 1.9.3
