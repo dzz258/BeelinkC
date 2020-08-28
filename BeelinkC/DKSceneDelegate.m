@@ -7,6 +7,9 @@
 //
 
 #import "DKSceneDelegate.h"
+#import "DKAccountViewController.h"
+#import "DKBaseNavigationViewController.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
 
 @interface DKSceneDelegate ()
 
@@ -19,8 +22,21 @@
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;
+    manager.shouldResignOnTouchOutside = YES;
+    manager.enableAutoToolbar = NO;
+    
+    [self goLogin];
 }
 
+-(void)goLogin{
+    //已登陆
+    kLog(@"去登陆");
+    DKAccountViewController *loginVC = [[DKAccountViewController alloc] init];
+    loginVC.isHideNav = YES;
+    self.window.rootViewController = [[DKBaseNavigationViewController alloc] initWithRootViewController:loginVC];
+}
 
 - (void)sceneDidDisconnect:(UIScene *)scene {
     // Called as the scene is being released by the system.

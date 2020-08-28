@@ -25,5 +25,6 @@
 #import "EasyShowView.h"
 #import "NSObject+CommonLogicDispose.h"
 #import "DZNetwork.h"
+#import "DKTools.h"
 
 #endif /* BeelinkC_Prefix_pch */

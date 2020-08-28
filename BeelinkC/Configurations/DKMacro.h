@@ -21,11 +21,11 @@
 #define KScreen_Height ([[UIScreen mainScreen] bounds].size.height)
 
 #pragma mark ------------------导航栏、tabBar 高度---------------------
-#define kStatuHeight ([UIApplication sharedApplication].statusBarFrame.size.height)
+#define kStatuHeight ([DKTools dk_statusBarHight])
 #define kNavBarHeight 44.0
 #define kTopHeight (kStatuHeight + kNavBarHeight)
-#define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
-#define kXoffsetHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?20:0)
+#define kTabBarHeight (kStatuHeight>20?83:49)
+#define kXoffsetHeight (kStatuHeight>20?20:0)
 #define kXoffsetTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?40:0)
 
 #define kWidth_fact(Size) (KScreen_Width*Size/375)
@@ -54,7 +54,8 @@
 #define kImage_local(file,ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:ext]]
 // UIImage对象
 #define KImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
-
+// UIImage对象(本地)
+#define KLImage(imageName) [UIImage imageNamed:kLocal_text(imageName)]
 #pragma mark ------------------打印宏定义---------------------
 
 //#ifdef DEBUG

@@ -82,6 +82,9 @@
 /// @param lightColor 普通模式颜色
 /// @param darkColor 暗黑模式颜色
 + (UIColor *)colorWithLightColorStr:(NSString *)lightColor DarkColor:(NSString *)darkColor{
+    if (darkColor.length == 0) {
+        darkColor = lightColor;
+    }
     return [UIColor colorWithLightColor:[UIColor colorWithHexString:lightColor] DarkColor:[UIColor colorWithHexString:darkColor]];
 }
 
@@ -94,14 +97,19 @@
 + (UIColor *)colorWithLightColorStr:(NSString *)lightColor WithLightColorAlpha:(CGFloat)lightAlpha DarkColor:(NSString *)darkColor WithDarkColorAlpha:(CGFloat)darkAlpha{
     return [UIColor colorWithLightColor:[UIColor colorWithHexString:lightColor alpha:lightAlpha] DarkColor:[UIColor colorWithHexString:darkColor alpha:darkAlpha]];
 }
-//绘制渐变色颜色的方法
-+ (CAGradientLayer *)setGradualChangingColor:(UIView *)view fromColor:(NSString *)fromHexColorStr toColor:(NSString *)toHexColorStr{
+//绘制渐变色颜色的方法 shade
++ (CAGradientLayer *)color_shade:(CGSize)size colors:(NSArray *)colors{//fromColor:(NSString *)fromHexColorStr toColor:(NSString *)toHexColorStr{
     //    CAGradientLayer类对其绘制渐变背景颜色、填充层的形状(包括圆角)
     CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-    gradientLayer.frame = view.bounds;
+    gradientLayer.frame = CGRectMake(0, 0, size.width, size.height);
 
+    NSMutableArray *mutColors = [[NSMutableArray alloc] init];
+    for (int i= 0; i<colors.count; i++) {
+        [mutColors addObject:(__bridge id)[UIColor colorWithHexString:colors[i]].CGColor];
+    }
     //  创建渐变色数组，需要转换为CGColor颜色
-    gradientLayer.colors = @[(__bridge id)[UIColor colorWithHexString:fromHexColorStr].CGColor,(__bridge id)[UIColor colorWithHexString:toHexColorStr].CGColor];
+    gradientLayer.colors = mutColors;
+//    gradientLayer.colors = @[(__bridge id)[UIColor colorWithHexString:fromHexColorStr].CGColor,(__bridge id)[UIColor colorWithHexString:toHexColorStr].CGColor];
     
     //  设置渐变颜色方向，左上点为(0,0), 右下点为(1,1)
     gradientLayer.startPoint = CGPointMake(0, 0);

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		58EFA6D140D08A1BDE2F20E5 /* libPods-BeelinkC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9AA23D15D769DDECE9871F /* libPods-BeelinkC.a */; };
+		8646CD2224F896E2000CCFC7 /* DKDropBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646CD2124F896E2000CCFC7 /* DKDropBtn.m */; };
+		8646CD2524F8AF6A000CCFC7 /* DKCountDownBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646CD2424F8AF6A000CCFC7 /* DKCountDownBtn.m */; };
 		864E338C24EA1BFF005F7583 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 864E338E24EA1BFF005F7583 /* Localizable.strings */; };
 		864E339224EA64F8005F7583 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 864E339424EA64F8005F7583 /* InfoPlist.strings */; };
 		864E34A024EA6BFD005F7583 /* DKBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E339C24EA6BFD005F7583 /* DKBaseTableViewCell.m */; };
@@ -25,7 +27,6 @@
 		864E34AD24EA6BFD005F7583 /* NSString+JLHDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E33BB24EA6BFD005F7583 /* NSString+JLHDate.m */; };
 		864E34AE24EA6BFD005F7583 /* NSObject+YJNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E33BC24EA6BFD005F7583 /* NSObject+YJNetRequest.m */; };
 		864E34B024EA6BFD005F7583 /* NSString+AttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E33BF24EA6BFD005F7583 /* NSString+AttributedString.m */; };
-		864E34B124EA6BFD005F7583 /* M_Arrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E33C024EA6BFD005F7583 /* M_Arrow.m */; };
 		864E34B224EA6BFD005F7583 /* DKNoneDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E33C224EA6BFD005F7583 /* DKNoneDataView.m */; };
 		864E34B324EA6BFD005F7583 /* UITableView+DKNoneData.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E33C324EA6BFD005F7583 /* UITableView+DKNoneData.m */; };
 		864E34B424EA6BFD005F7583 /* NSObject+ToolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E33C724EA6BFD005F7583 /* NSObject+ToolClass.m */; };
@@ -119,6 +120,13 @@
 		864E351A24EA6D9A005F7583 /* DKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E351324EA6D9A005F7583 /* DKLoginViewController.m */; };
 		864E351B24EA6D9A005F7583 /* DKUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E351724EA6D9A005F7583 /* DKUserInfo.m */; };
 		864E352124EA7872005F7583 /* UIColor+DKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E352024EA7872005F7583 /* UIColor+DKColor.m */; };
+		869CDA7324F756AD0094D034 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 869CDA7224F756AD0094D034 /* Images.xcassets */; };
+		869CDA7624F75A7A0094D034 /* DKLoginMobileV.m in Sources */ = {isa = PBXBuildFile; fileRef = 869CDA7524F75A7A0094D034 /* DKLoginMobileV.m */; };
+		869CDA7924F75AA10094D034 /* DKLoginPasswordV.m in Sources */ = {isa = PBXBuildFile; fileRef = 869CDA7824F75AA10094D034 /* DKLoginPasswordV.m */; };
+		869CDA7C24F75AD40094D034 /* DKRegisterMobileV.m in Sources */ = {isa = PBXBuildFile; fileRef = 869CDA7B24F75AD40094D034 /* DKRegisterMobileV.m */; };
+		869CDA8024F7A2DD0094D034 /* GHAttributesLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 869CDA7F24F7A2DD0094D034 /* GHAttributesLabel.m */; };
+		86B2C1B524F5FCF900A59F83 /* DKAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B2C1B424F5FCF900A59F83 /* DKAccountViewController.m */; };
+		86B2C1B824F6070B00A59F83 /* DKTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B2C1B724F6070B00A59F83 /* DKTools.m */; };
 		86C6A28924E37C37002C26F8 /* DKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C6A28824E37C37002C26F8 /* DKAppDelegate.m */; };
 		86C6A28C24E37C37002C26F8 /* DKSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C6A28B24E37C37002C26F8 /* DKSceneDelegate.m */; };
 		86C6A28F24E37C37002C26F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C6A28E24E37C37002C26F8 /* ViewController.m */; };
@@ -151,6 +159,10 @@
 		427F062157BB167EDCBC948A /* Pods-BeelinkC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeelinkC.debug.xcconfig"; path = "Target Support Files/Pods-BeelinkC/Pods-BeelinkC.debug.xcconfig"; sourceTree = "<group>"; };
 		5A9AA23D15D769DDECE9871F /* libPods-BeelinkC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeelinkC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		734E57126637B02E576D527C /* Pods-BeelinkC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeelinkC.release.xcconfig"; path = "Target Support Files/Pods-BeelinkC/Pods-BeelinkC.release.xcconfig"; sourceTree = "<group>"; };
+		8646CD2024F896E2000CCFC7 /* DKDropBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKDropBtn.h; sourceTree = "<group>"; };
+		8646CD2124F896E2000CCFC7 /* DKDropBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKDropBtn.m; sourceTree = "<group>"; };
+		8646CD2324F8AF6A000CCFC7 /* DKCountDownBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKCountDownBtn.h; sourceTree = "<group>"; };
+		8646CD2424F8AF6A000CCFC7 /* DKCountDownBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKCountDownBtn.m; sourceTree = "<group>"; };
 		864E338524EA1AC1005F7583 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		864E338624EA1AC1005F7583 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		864E338D24EA1BFF005F7583 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -173,7 +185,6 @@
 		864E33A424EA6BFD005F7583 /* DKBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKBaseViewModel.m; sourceTree = "<group>"; };
 		864E33A824EA6BFD005F7583 /* UIViewController+XHPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XHPhoto.h"; sourceTree = "<group>"; };
 		864E33A924EA6BFD005F7583 /* UIViewController+XHPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XHPhoto.m"; sourceTree = "<group>"; };
-		864E33AA24EA6BFD005F7583 /* M_Arrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M_Arrow.h; sourceTree = "<group>"; };
 		864E33AB24EA6BFD005F7583 /* NSString+AttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AttributedString.h"; sourceTree = "<group>"; };
 		864E33AC24EA6BFD005F7583 /* NSString+DKFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DKFormat.m"; sourceTree = "<group>"; };
 		864E33AE24EA6BFD005F7583 /* UILabel+ChangeLineSpaceAndWordSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ChangeLineSpaceAndWordSpace.m"; sourceTree = "<group>"; };
@@ -192,7 +203,6 @@
 		864E33BC24EA6BFD005F7583 /* NSObject+YJNetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YJNetRequest.m"; sourceTree = "<group>"; };
 		864E33BE24EA6BFD005F7583 /* NSString+DKFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DKFormat.h"; sourceTree = "<group>"; };
 		864E33BF24EA6BFD005F7583 /* NSString+AttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AttributedString.m"; sourceTree = "<group>"; };
-		864E33C024EA6BFD005F7583 /* M_Arrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M_Arrow.m; sourceTree = "<group>"; };
 		864E33C224EA6BFD005F7583 /* DKNoneDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKNoneDataView.m; sourceTree = "<group>"; };
 		864E33C324EA6BFD005F7583 /* UITableView+DKNoneData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DKNoneData.m"; sourceTree = "<group>"; };
 		864E33C424EA6BFD005F7583 /* DKNoneDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKNoneDataView.h; sourceTree = "<group>"; };
@@ -379,6 +389,19 @@
 		864E351724EA6D9A005F7583 /* DKUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKUserInfo.m; sourceTree = "<group>"; };
 		864E351F24EA7872005F7583 /* UIColor+DKColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+DKColor.h"; sourceTree = "<group>"; };
 		864E352024EA7872005F7583 /* UIColor+DKColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DKColor.m"; sourceTree = "<group>"; };
+		869CDA7224F756AD0094D034 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		869CDA7424F75A7A0094D034 /* DKLoginMobileV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKLoginMobileV.h; sourceTree = "<group>"; };
+		869CDA7524F75A7A0094D034 /* DKLoginMobileV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKLoginMobileV.m; sourceTree = "<group>"; };
+		869CDA7724F75AA10094D034 /* DKLoginPasswordV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKLoginPasswordV.h; sourceTree = "<group>"; };
+		869CDA7824F75AA10094D034 /* DKLoginPasswordV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKLoginPasswordV.m; sourceTree = "<group>"; };
+		869CDA7A24F75AD40094D034 /* DKRegisterMobileV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKRegisterMobileV.h; sourceTree = "<group>"; };
+		869CDA7B24F75AD40094D034 /* DKRegisterMobileV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKRegisterMobileV.m; sourceTree = "<group>"; };
+		869CDA7E24F7A2DD0094D034 /* GHAttributesLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHAttributesLabel.h; sourceTree = "<group>"; };
+		869CDA7F24F7A2DD0094D034 /* GHAttributesLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHAttributesLabel.m; sourceTree = "<group>"; };
+		86B2C1B324F5FCF900A59F83 /* DKAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKAccountViewController.h; sourceTree = "<group>"; };
+		86B2C1B424F5FCF900A59F83 /* DKAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKAccountViewController.m; sourceTree = "<group>"; };
+		86B2C1B624F6070B00A59F83 /* DKTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKTools.h; sourceTree = "<group>"; };
+		86B2C1B724F6070B00A59F83 /* DKTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKTools.m; sourceTree = "<group>"; };
 		86C6A28424E37C37002C26F8 /* BeelinkC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeelinkC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C6A28724E37C37002C26F8 /* DKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKAppDelegate.h; sourceTree = "<group>"; };
 		86C6A28824E37C37002C26F8 /* DKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKAppDelegate.m; sourceTree = "<group>"; };
@@ -436,12 +459,14 @@
 		864E338924EA1BC9005F7583 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
+				869CDA7124F7567E0094D034 /* Images */,
 				864E339824EA68D0005F7583 /* DKApi.h */,
 				864E339924EA68D0005F7583 /* DKCustom.h */,
 				864E339724EA68D0005F7583 /* DKMacro.h */,
 				864E339624EA67A8005F7583 /* BeelinkC-Prefix.pch */,
 				864E338E24EA1BFF005F7583 /* Localizable.strings */,
 				864E339424EA64F8005F7583 /* InfoPlist.strings */,
+				869CDA7224F756AD0094D034 /* Images.xcassets */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -477,12 +502,11 @@
 		864E33A624EA6BFD005F7583 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				869CDA7D24F7A2DD0094D034 /* GHAttributesLabel */,
 				864E33CC24EA6BFD005F7583 /* CBPopup */,
 				864E33C124EA6BFD005F7583 /* DKTableViewNoneDataSet */,
 				864E33B624EA6BFD005F7583 /* DKTagView.h */,
 				864E33D724EA6BFD005F7583 /* DKTagView.m */,
-				864E33AA24EA6BFD005F7583 /* M_Arrow.h */,
-				864E33C024EA6BFD005F7583 /* M_Arrow.m */,
 				864E33D624EA6BFD005F7583 /* NSObject+CommonLogicDispose.h */,
 				864E33B724EA6BFD005F7583 /* NSObject+CommonLogicDispose.m */,
 				864E33DD24EA6BFD005F7583 /* NSObject+YJNetRequest.h */,
@@ -508,6 +532,10 @@
 				864E33AD24EA6BFD005F7583 /* YBAttributeTextTapAction */,
 				864E351F24EA7872005F7583 /* UIColor+DKColor.h */,
 				864E352024EA7872005F7583 /* UIColor+DKColor.m */,
+				86B2C1B624F6070B00A59F83 /* DKTools.h */,
+				86B2C1B724F6070B00A59F83 /* DKTools.m */,
+				8646CD2324F8AF6A000CCFC7 /* DKCountDownBtn.h */,
+				8646CD2424F8AF6A000CCFC7 /* DKCountDownBtn.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1031,8 +1059,10 @@
 		864E351224EA6D9A005F7583 /* ViewContoller */ = {
 			isa = PBXGroup;
 			children = (
-				864E351324EA6D9A005F7583 /* DKLoginViewController.m */,
 				864E351424EA6D9A005F7583 /* DKLoginViewController.h */,
+				864E351324EA6D9A005F7583 /* DKLoginViewController.m */,
+				86B2C1B324F5FCF900A59F83 /* DKAccountViewController.h */,
+				86B2C1B424F5FCF900A59F83 /* DKAccountViewController.m */,
 			);
 			path = ViewContoller;
 			sourceTree = "<group>";
@@ -1049,8 +1079,32 @@
 		864E351824EA6D9A005F7583 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				869CDA7424F75A7A0094D034 /* DKLoginMobileV.h */,
+				869CDA7524F75A7A0094D034 /* DKLoginMobileV.m */,
+				869CDA7724F75AA10094D034 /* DKLoginPasswordV.h */,
+				869CDA7824F75AA10094D034 /* DKLoginPasswordV.m */,
+				869CDA7A24F75AD40094D034 /* DKRegisterMobileV.h */,
+				869CDA7B24F75AD40094D034 /* DKRegisterMobileV.m */,
+				8646CD2024F896E2000CCFC7 /* DKDropBtn.h */,
+				8646CD2124F896E2000CCFC7 /* DKDropBtn.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		869CDA7124F7567E0094D034 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		869CDA7D24F7A2DD0094D034 /* GHAttributesLabel */ = {
+			isa = PBXGroup;
+			children = (
+				869CDA7E24F7A2DD0094D034 /* GHAttributesLabel.h */,
+				869CDA7F24F7A2DD0094D034 /* GHAttributesLabel.m */,
+			);
+			path = GHAttributesLabel;
 			sourceTree = "<group>";
 		};
 		86C6A27B24E37C37002C26F8 = {
@@ -1231,6 +1285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86C6A29724E37C38002C26F8 /* LaunchScreen.storyboard in Resources */,
+				869CDA7324F756AD0094D034 /* Images.xcassets in Resources */,
 				864E34CA24EA6BFD005F7583 /* BRPickerView.bundle in Resources */,
 				864E34EF24EA6BFD005F7583 /* NetworkImage.xcassets in Resources */,
 				864E338C24EA1BFF005F7583 /* Localizable.strings in Resources */,
@@ -1306,6 +1361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				864E34FD24EA6BFD005F7583 /* UITextView+XMExtension.m in Sources */,
+				869CDA7624F75A7A0094D034 /* DKLoginMobileV.m in Sources */,
 				864E34EC24EA6BFD005F7583 /* SGPageTitleView.m in Sources */,
 				864E34EA24EA6BFD005F7583 /* SGPageContentScrollView.m in Sources */,
 				864E34F524EA6BFD005F7583 /* XHWebImageAutoSize.m in Sources */,
@@ -1316,6 +1372,7 @@
 				864E350A24EA6BFD005F7583 /* UIColor+JM.m in Sources */,
 				864E34C624EA6BFD005F7583 /* NSDate+BRPickerView.m in Sources */,
 				864E34C324EA6BFD005F7583 /* DKWKWebViewBsseViewController.m in Sources */,
+				869CDA7C24F75AD40094D034 /* DKRegisterMobileV.m in Sources */,
 				864E34E724EA6BFD005F7583 /* DDQFoundationModel.m in Sources */,
 				864E34F324EA6BFD005F7583 /* UITableView+XHWebImageAutoSize.m in Sources */,
 				864E34D224EA6BFD005F7583 /* EasyEmptyView.m in Sources */,
@@ -1326,6 +1383,7 @@
 				864E34FC24EA6BFD005F7583 /* DXShareModel.m in Sources */,
 				864E34E224EA6BFD005F7583 /* EasyLodingGlobalConfig.m in Sources */,
 				864E350C24EA6BFD005F7583 /* JMBadgeValue.m in Sources */,
+				86B2C1B524F5FCF900A59F83 /* DKAccountViewController.m in Sources */,
 				864E34D624EA6BFD005F7583 /* EasyAlertTypes.m in Sources */,
 				864E34A124EA6BFD005F7583 /* DKBaseModel.m in Sources */,
 				864E34AD24EA6BFD005F7583 /* NSString+JLHDate.m in Sources */,
@@ -1341,9 +1399,11 @@
 				864E34A024EA6BFD005F7583 /* DKBaseTableViewCell.m in Sources */,
 				864E34EB24EA6BFD005F7583 /* SGPageContentCollectionView.m in Sources */,
 				864E34D324EA6BFD005F7583 /* EasyEmptyPart.m in Sources */,
+				869CDA8024F7A2DD0094D034 /* GHAttributesLabel.m in Sources */,
 				864E34F624EA6BFD005F7583 /* UINavigationSXFixSpace.m in Sources */,
 				864E350824EA6BFD005F7583 /* UIView+JM.m in Sources */,
 				864E34F724EA6BFD005F7583 /* UIViewController+BarButton.m in Sources */,
+				8646CD2524F8AF6A000CCFC7 /* DKCountDownBtn.m in Sources */,
 				86C6A28924E37C37002C26F8 /* DKAppDelegate.m in Sources */,
 				864E350024EA6BFD005F7583 /* YYCache.m in Sources */,
 				864E34F924EA6BFD005F7583 /* DXSharePlatform.m in Sources */,
@@ -1371,7 +1431,6 @@
 				864E34E624EA6BFD005F7583 /* JKCountDownButton.m in Sources */,
 				864E34FF24EA6BFD005F7583 /* YYDiskCache.m in Sources */,
 				864E351924EA6D9A005F7583 /* DKLoginViewModel.m in Sources */,
-				864E34B124EA6BFD005F7583 /* M_Arrow.m in Sources */,
 				864E34B724EA6BFD005F7583 /* UIViewController+CBPopup.m in Sources */,
 				864E34E024EA6BFD005F7583 /* EasyLodingView.m in Sources */,
 				864E34C724EA6BFD005F7583 /* BRDatePickerView.m in Sources */,
@@ -1383,10 +1442,12 @@
 				864E34AE24EA6BFD005F7583 /* NSObject+YJNetRequest.m in Sources */,
 				864E34C424EA6BFD005F7583 /* NSObject+DKWKWebViewModel.m in Sources */,
 				864E34B024EA6BFD005F7583 /* NSString+AttributedString.m in Sources */,
+				8646CD2224F896E2000CCFC7 /* DKDropBtn.m in Sources */,
 				864E34DE24EA6BFD005F7583 /* UIView+EasyShowExt.m in Sources */,
 				864E34BD24EA6BFD005F7583 /* UITextView+WZB.m in Sources */,
 				864E351B24EA6D9A005F7583 /* DKUserInfo.m in Sources */,
 				864E351A24EA6D9A005F7583 /* DKLoginViewController.m in Sources */,
+				869CDA7924F75AA10094D034 /* DKLoginPasswordV.m in Sources */,
 				864E34BE24EA6BFD005F7583 /* DZNetworkHelper.m in Sources */,
 				86C6A28C24E37C37002C26F8 /* DKSceneDelegate.m in Sources */,
 				864E34D924EA6BFD005F7583 /* EasyAlertConfig.m in Sources */,
@@ -1409,6 +1470,7 @@
 				864E34A424EA6BFD005F7583 /* DKBaseViewModel.m in Sources */,
 				864E350624EA6BFD005F7583 /* JMConfig.m in Sources */,
 				864E34E524EA6BFD005F7583 /* LXFPhotoHelper.m in Sources */,
+				86B2C1B824F6070B00A59F83 /* DKTools.m in Sources */,
 				864E34DD24EA6BFD005F7583 /* EasyShowLabel.m in Sources */,
 				864E34DC24EA6BFD005F7583 /* EasyShowUtils.m in Sources */,
 				864E34FA24EA6BFD005F7583 /* DXShareView.m in Sources */,

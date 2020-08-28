@@ -86,7 +86,7 @@
     if (self.navigationController.viewControllers.count > 1) {
         [self addLeftBarButtonWithImage:KImage(@"nav_back") action:@selector(goBack)];
     }
-    self.view.backgroundColor = color_view_bg;//[UIColor whiteColor];
+    self.view.backgroundColor = color_white10;//[UIColor whiteColor];
 //    [self observeNetworkStart];
 }
 -(void)goBack{
@@ -115,11 +115,11 @@
         _superTableV.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRereshing)];
         //底部刷新
         _superTableV.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
-        _superTableV.backgroundColor = color_view_bg;
+        _superTableV.backgroundColor = color_white10;
         _superTableV.scrollsToTop = YES;
         UIView *footerV = [[UIView alloc]init];
         footerV.frame = CGRectMake(0, 0, KScreen_Width, 15);
-        footerV.backgroundColor = color_view_bg;
+        footerV.backgroundColor = color_white10;
         _superTableV.tableFooterView = footerV;
         
         _superTableV.mj_footer.hidden = YES;

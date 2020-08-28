@@ -49,7 +49,7 @@
 -(void)setCurrentTag:(NSInteger)currentTag{
     _currentTag = currentTag;
     UIButton *btn = [self viewWithTag:currentTag];
-    [btn setTitleColor:color_main_red forState:UIControlStateNormal];
+    [btn setTitleColor:kColor_hex(@"#b73527") forState:UIControlStateNormal];
 }
 -(void)clickTo:(UIButton *)sender{
     if ([self.delegate respondsToSelector:@selector(handleSelectTag:keyWord:)]) {

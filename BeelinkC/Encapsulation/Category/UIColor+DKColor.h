@@ -38,10 +38,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIColor *)colorWithLightColorStr:(NSString *)lightColor WithLightColorAlpha:(CGFloat)lightAlpha DarkColor:(NSString *)darkColor WithDarkColorAlpha:(CGFloat)darkAlpha;
 
 /// 绘制渐变色颜色的方法
-/// @param view 控件
-/// @param fromHexColorStr 开始颜色
-/// @param toHexColorStr 结束颜色
-+ (CAGradientLayer *)setGradualChangingColor:(UIView *)view fromColor:(NSString *)fromHexColorStr toColor:(NSString *)toHexColorStr;
+/// @param size 大小
+/// @param colors 渐变数组
++ (CAGradientLayer *)color_shade:(CGSize)size colors:(NSArray *)colors;
 @end
 
 NS_ASSUME_NONNULL_END

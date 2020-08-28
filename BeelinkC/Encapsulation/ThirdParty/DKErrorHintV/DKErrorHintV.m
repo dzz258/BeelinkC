@@ -77,7 +77,7 @@
     }];
     
     UILabel *tipLabel = [[UILabel alloc] init];
-    tipLabel.textColor = color_hint_title;
+    tipLabel.textColor = kColor_hex(@"#c0c8d3");
     tipLabel.font = KF_H_F(15);
     tipLabel.textAlignment = NSTextAlignmentCenter;
     tipLabel.numberOfLines = 0;

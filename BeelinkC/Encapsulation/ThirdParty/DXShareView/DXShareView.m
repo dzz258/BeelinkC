@@ -93,13 +93,13 @@ static CGFloat const DXShreCancelHeight = 40.f;
         }
         
         UIView *lineV = [[UIView alloc] initWithFrame:CGRectMake(0, self.shreViewHeight - DXShreCancelHeight-kXoffsetHeight-1, KScreen_Width, 1)];
-        lineV.backgroundColor = color_nav_line;
+//        lineV.backgroundColor = color_nav_line;
         [self.bottomPopView addSubview:lineV];
         
         UIButton *cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [cancelButton setFrame:CGRectMake(0, self.shreViewHeight - DXShreCancelHeight-kXoffsetHeight, KScreen_Width, DXShreCancelHeight)];
         [cancelButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        cancelButton.backgroundColor = color_view_bg;
+//        cancelButton.backgroundColor = color_view_bg;
         [cancelButton setTitle:@"取消" forState:UIControlStateNormal];
         cancelButton.titleLabel.font = [UIFont systemFontOfSize:16.0f];
         [cancelButton addTarget:self action:@selector(closeShareView) forControlEvents:UIControlEventTouchUpInside];
@@ -226,7 +226,7 @@ static CGFloat const DXShreCancelHeight = 40.f;
 {
     if (_bottomPopView == nil) {
         _bottomPopView = [[UIView alloc] initWithFrame:CGRectMake(0, KScreen_Height, KScreen_Width, self.shreViewHeight)];
-        _bottomPopView.backgroundColor = color_view_bg;
+//        _bottomPopView.backgroundColor = color_view_bg;
     }
     return _bottomPopView;
 }

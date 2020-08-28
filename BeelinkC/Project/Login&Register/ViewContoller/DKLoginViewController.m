@@ -48,9 +48,9 @@
     if (!_loginBtn) {
         _loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _loginBtn.titleLabel.font = KF_H_F(15);
-        [_loginBtn setTitleColor:color_btn_title_white forState:UIControlStateNormal];
+//        [_loginBtn setTitleColor:color_btn_title_white forState:UIControlStateNormal];
         [_loginBtn setTitle:@"登录" forState:UIControlStateNormal];
-        [_loginBtn setBackgroundColor:color_btn_bg];
+//        [_loginBtn setBackgroundColor:color_btn_bg];
         KRadius(_loginBtn, 10);
         @weakify(self)
         [[_loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
@@ -93,7 +93,7 @@
     }];
     
     UIView *text1Bg = [[UIView alloc] init];
-    text1Bg.backgroundColor = color_view_bg_lividity3;
+//    text1Bg.backgroundColor = color_view_bg_lividity3;
     KRadius(text1Bg, kWidth_fact(4));
     [self.bgScrollView addSubview:text1Bg];
     [text1Bg mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -107,7 +107,7 @@
     UILabel *areaL = [[UILabel alloc] init];
     areaL.text = @"+86";
     areaL.font = KF_H_F(15);
-    areaL.textColor = color_textF_title;
+//    areaL.textColor = color_textF_title;
     areaL.textAlignment = NSTextAlignmentRight;
     [text1Bg addSubview:areaL];
     
@@ -118,7 +118,7 @@
     }];
     
     UIView *lineV = [[UIView alloc] init];
-    lineV.backgroundColor = color_table_group_line;
+//    lineV.backgroundColor = color_table_group_line;
     [text1Bg addSubview:lineV];
     [lineV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(areaL.mas_right).offset(kWidth_fact(10));
@@ -136,7 +136,7 @@
     }];
     
     UIView *text2Bg = [[UIView alloc] init];
-    text2Bg.backgroundColor = color_view_bg_lividity3;
+//    text2Bg.backgroundColor = color_view_bg_lividity3;
     KRadius(text2Bg, kWidth_fact(4));
     [self.bgScrollView addSubview:text2Bg];
     [text2Bg mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -173,11 +173,11 @@
     UILabel *TCPL = [[UILabel alloc] init];
     TCPL.text = @"登录即代表阅读并同意服务协议";
     TCPL.font = KF_H_F(11);
-    TCPL.textColor = color_main_gray4;
+//    TCPL.textColor = color_main_gray4;
     TCPL.numberOfLines = 0;
     [self.bgScrollView addSubview:TCPL];
     
-    TCPL.attributedText = [TCPL.text stringWithParagraphlineSpeace:0 NormalAttributeFC:@{} withKeyTextColor:@[@"服务协议"] KeyAttributeFC:@{NSForegroundColorAttributeName:color_main_title_black}];
+//    TCPL.attributedText = [TCPL.text stringWithParagraphlineSpeace:0 NormalAttributeFC:@{} withKeyTextColor:@[@"服务协议"] KeyAttributeFC:@{NSForegroundColorAttributeName:color_main_title_black}];
     
     [TCPL yb_addAttributeTapActionWithStrings:@[@"服务协议"] tapClicked:^(UILabel *label, NSString *string, NSRange range, NSInteger index) {
         NSLog(@"点击了用户协议");
@@ -207,7 +207,7 @@
 //        _text_1F.backgroundColor = DCColor_gray11;
         _text_1F.keyboardType = UIKeyboardTypeNumberPad;
         _text_1F.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _text_1F.textColor = color_textF_title;
+//        _text_1F.textColor = color_textF_title;
         NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:@"请输入手机账号" attributes:@{NSForegroundColorAttributeName:[UIColor grayColor],NSFontAttributeName:_text_1F.font}];
         _text_1F.attributedPlaceholder = attrString;
     }
@@ -225,7 +225,7 @@
 //        _text_2F.secureTextEntry = YES;
 //        _text_2F.textContentType = UITextContentTypePassword;
         _text_2F.keyboardType = UIKeyboardTypeASCIICapable;
-        _text_2F.textColor = color_textF_title;
+//        _text_2F.textColor = color_textF_title;
         NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:@"请输入验证码" attributes:@{NSForegroundColorAttributeName:[UIColor grayColor],NSFontAttributeName:_text_1F.font}];
         _text_2F.attributedPlaceholder = attrString;
     }
@@ -235,8 +235,8 @@
     if (!_codeBtn) {
         _codeBtn = [JKCountDownButton buttonWithType:UIButtonTypeCustom];
         _codeBtn.titleLabel.font = KF_H_F(15);
-        [_codeBtn setTitleColor:color_btn_title_white forState:UIControlStateNormal];
-        [_codeBtn setBackgroundColor:color_btn_bg];
+//        [_codeBtn setTitleColor:color_btn_title_white forState:UIControlStateNormal];
+//        [_codeBtn setBackgroundColor:color_btn_bg];
         KRadius(_codeBtn, kWidth_fact(4));
         [_codeBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
         kWeakSelf(self);
@@ -246,8 +246,8 @@
         }];
         [_codeBtn countDownFinished:^NSString *(JKCountDownButton *countDownButton, NSUInteger second) {
             countDownButton.enabled = YES;
-            [countDownButton setTitleColor:color_btn_title_white forState:UIControlStateNormal];
-            [countDownButton setBackgroundColor:color_btn_bg];
+//            [countDownButton setTitleColor:color_btn_title_white forState:UIControlStateNormal];
+//            [countDownButton setBackgroundColor:color_btn_bg];
             return @"重新发送";
         }];
     }
@@ -259,8 +259,8 @@
     [self.viewModel api_sms:[NSString null_str:self.text_1F.text] success:^(id  _Nonnull data) {
         weakself.loading = NO;
         [weakself.codeBtn startCountDownWithSecond:60];
-        [weakself.codeBtn setBackgroundColor:color_view_bg_lividity3];
-        [weakself.codeBtn setTitleColor:color_btn_bg forState:UIControlStateNormal];
+//        [weakself.codeBtn setBackgroundColor:color_view_bg_lividity3];
+//        [weakself.codeBtn setTitleColor:color_btn_bg forState:UIControlStateNormal];
         [weakself.codeBtn countDownChanging:^NSString *(JKCountDownButton *countDownButton,NSUInteger second) {
             NSString *title = [NSString stringWithFormat:@"剩余%zd秒",second];
             return title;

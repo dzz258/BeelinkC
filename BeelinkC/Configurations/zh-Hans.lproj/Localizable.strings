@@ -5,4 +5,26 @@
   Created by Gavin on 2020/8/17.
   Copyright © 2020 Gavin. All rights reserved.
 */
+"language" = "zh";
+"login_title" = "登录";
+"login_subTitle_prefix" = "还没有账号，立即";
+"login_subTitle_suffix" = " 注册 ";
+"login_enter" = "立即登录";
+"login_account" = "账号密码登录";
+"login_code" = "手机验证码登录";
+"login_third" = "第三方登录";
+"login_btn_verifycode" = "获取验证码";
+"login_btn_againcode" = "重新获取";
+"login_input_phone" = "请输入手机号";
+"login_input_code" = "请输入验证码";
+"login_input_account" = "请输入账号（手机号/邮箱）";
+"login_input_pass" = "请输入账号密码";
+"login_btn_forget-pass" = "忘记密码？";
+"register_subTitle_prefix" = "已有Beelink账号，立即";
+"register_subTitle_suffix" = " 登录 ";
+"register_title" = "注册";
+"register_btn_next" = "下一步";
+"register_agree" = "勾选表示同意";
+"register_protocol" = "《用户注册协议和隐私政策》";
 "home_title" = "您好，世界";
+

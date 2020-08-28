@@ -21,11 +21,11 @@
 
     UINavigationBar *navBar = [UINavigationBar appearance];
 //    [navBar setTintColor:kMainWhiteColor];
-    [navBar setTitleTextAttributes:@{NSForegroundColorAttributeName :color_nav_title, NSFontAttributeName :KF_BH_F(16)}];
+    [navBar setTitleTextAttributes:@{NSForegroundColorAttributeName :kColor_hex(@"#1e2629"), NSFontAttributeName :KF_BH_F(16)}];
 //    [navBar setShadowImage:[UIImage new]];//去掉阴影线
 //    [navBar setBackgroundImage:[UIImage createImageWithColor:DCColor_nav_blue] forBarMetrics:UIBarMetricsDefault];
-    [navBar setShadowImage:[UIImage createImageWithColor:color_nav_line]];//设置阴影线
-    [navBar setBackgroundImage:[UIImage createImageWithColor:color_nav_bg] forBarMetrics:UIBarMetricsDefault];
+    [navBar setShadowImage:[UIImage createImageWithColor:kColor_hex(@"#f5f7f7")]];//设置阴影线
+    [navBar setBackgroundImage:[UIImage createImageWithColor:kColor_hex(@"#ffffff")] forBarMetrics:UIBarMetricsDefault];
 
     
 //    [navBar setBackgroundImage:[UIImage imageColors:@[DDColorGradient_orange_start,DDColorGradient_orange_end] type:GradientTypeTopToBottom imgSize:CGSizeMake(KScreen_Width, kTopHeight)] forBarMetrics:UIBarMetricsDefault];

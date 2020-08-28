@@ -5,4 +5,26 @@
   Created by Gavin on 2020/8/17.
   Copyright © 2020 Gavin. All rights reserved.
 */
+"language" = "en";
+"login_title" = "Log in";
+"login_subTitle_prefix" = "Or Create";
+"login_subTitle_suffix" = " New account ";
+"login_enter" = "Enter";
+"login_account" = "Account log in";
+"login_code" = "Mobile log in";
+"login_third" = "3rd party log in";
+"login_btn_verifycode" = "Get Code";
+"login_btn_againcode" = "重新获取";
+"login_input_phone" = "Enter your phone number";
+"login_input_code" = "Enter the Verification Code";
+"login_input_account" = "Enter your account(email/phone)";
+"login_input_pass" = "Enter your password";
+"login_btn_forget-pass" = "Forgot Password?";
+"register_subTitle_prefix" = "Already have an account?";
+"register_subTitle_suffix" = " Sign in ";
+"register_title" = "Sign up";
+"register_btn_next" = "Continue";
+"register_agree" = "I read and agree";
+"register_protocol" = "《to Terms & Conditions 》";
+
 "home_title" = "holle, world";

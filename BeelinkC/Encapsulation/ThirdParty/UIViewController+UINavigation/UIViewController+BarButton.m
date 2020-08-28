@@ -81,7 +81,7 @@
     UIButton *firstButton = [UIButton buttonWithType:UIButtonTypeCustom];
     firstButton.frame = CGRectMake(-10, 0, 60, 44);
     [firstButton setTitle:@" 返回" forState:UIControlStateNormal];
-    [firstButton setTitleColor:color_nav_title forState:UIControlStateNormal];
+    [firstButton setTitleColor:kColor_hex(@"#1e2629") forState:UIControlStateNormal];
     [firstButton setImage:KImage(@"nav_back") forState:UIControlStateNormal];
     [firstButton addTarget:self action:firstAction forControlEvents:UIControlEventTouchUpInside];
     [view addSubview:firstButton];
@@ -89,7 +89,7 @@
     UIButton *secondButton = [UIButton buttonWithType:UIButtonTypeCustom];
     secondButton.frame =CGRectMake(50, 0, 40, 44);
     [secondButton setTitle:@"关闭" forState:(UIControlStateNormal)];
-    [secondButton setTitleColor:color_nav_title forState:(UIControlStateNormal)];
+    [secondButton setTitleColor:kColor_hex(@"#1e2629") forState:(UIControlStateNormal)];
     [secondButton addTarget:self action:secondAction forControlEvents:(UIControlEventTouchUpInside)];
     [view addSubview:secondButton];
         

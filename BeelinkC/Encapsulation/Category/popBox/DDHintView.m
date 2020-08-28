@@ -130,7 +130,7 @@
         }
 
         _cancelBtn.titleLabel.font = kF_H(15);
-        [_cancelBtn setBackgroundColor:color_main_red];
+        [_cancelBtn setBackgroundColor:kColor_hex(@"#b73527")];
         @weakify(self)
         [[_cancelBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
             @strongify(self)
@@ -150,7 +150,7 @@
         }else{
             [_confirmBtn setTitle:self.dict[@"confirm"] forState:UIControlStateNormal];
         }
-        [_confirmBtn setBackgroundColor:color_btn_bg];
+        [_confirmBtn setBackgroundColor:kColor_hex(@"#b73527")];
         _confirmBtn.titleLabel.font = kF_H(15);
         @weakify(self)
         [[_confirmBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
