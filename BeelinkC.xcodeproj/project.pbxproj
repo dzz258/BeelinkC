@@ -127,6 +127,11 @@
 		869CDA8024F7A2DD0094D034 /* GHAttributesLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 869CDA7F24F7A2DD0094D034 /* GHAttributesLabel.m */; };
 		86B2C1B524F5FCF900A59F83 /* DKAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B2C1B424F5FCF900A59F83 /* DKAccountViewController.m */; };
 		86B2C1B824F6070B00A59F83 /* DKTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B2C1B724F6070B00A59F83 /* DKTools.m */; };
+		86B9D92624F9E82C00113CE7 /* DKRegisterStep1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B9D92524F9E82C00113CE7 /* DKRegisterStep1ViewController.m */; };
+		86B9D92924F9E83A00113CE7 /* DKRegisterStep2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B9D92824F9E83A00113CE7 /* DKRegisterStep2ViewController.m */; };
+		86BB7C0F2501DBD5006859DD /* DKForgetStep1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BB7C0E2501DBD5006859DD /* DKForgetStep1ViewController.m */; };
+		86BB7C122501DBE1006859DD /* DKForgetStep2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BB7C112501DBE1006859DD /* DKForgetStep2ViewController.m */; };
+		86BB7C152501DBEC006859DD /* DKForgetStep3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BB7C142501DBEC006859DD /* DKForgetStep3ViewController.m */; };
 		86C6A28924E37C37002C26F8 /* DKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C6A28824E37C37002C26F8 /* DKAppDelegate.m */; };
 		86C6A28C24E37C37002C26F8 /* DKSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C6A28B24E37C37002C26F8 /* DKSceneDelegate.m */; };
 		86C6A28F24E37C37002C26F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C6A28E24E37C37002C26F8 /* ViewController.m */; };
@@ -402,6 +407,16 @@
 		86B2C1B424F5FCF900A59F83 /* DKAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKAccountViewController.m; sourceTree = "<group>"; };
 		86B2C1B624F6070B00A59F83 /* DKTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKTools.h; sourceTree = "<group>"; };
 		86B2C1B724F6070B00A59F83 /* DKTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKTools.m; sourceTree = "<group>"; };
+		86B9D92424F9E82C00113CE7 /* DKRegisterStep1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKRegisterStep1ViewController.h; sourceTree = "<group>"; };
+		86B9D92524F9E82C00113CE7 /* DKRegisterStep1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKRegisterStep1ViewController.m; sourceTree = "<group>"; };
+		86B9D92724F9E83A00113CE7 /* DKRegisterStep2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKRegisterStep2ViewController.h; sourceTree = "<group>"; };
+		86B9D92824F9E83A00113CE7 /* DKRegisterStep2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKRegisterStep2ViewController.m; sourceTree = "<group>"; };
+		86BB7C0D2501DBD5006859DD /* DKForgetStep1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKForgetStep1ViewController.h; sourceTree = "<group>"; };
+		86BB7C0E2501DBD5006859DD /* DKForgetStep1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKForgetStep1ViewController.m; sourceTree = "<group>"; };
+		86BB7C102501DBE1006859DD /* DKForgetStep2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKForgetStep2ViewController.h; sourceTree = "<group>"; };
+		86BB7C112501DBE1006859DD /* DKForgetStep2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKForgetStep2ViewController.m; sourceTree = "<group>"; };
+		86BB7C132501DBEC006859DD /* DKForgetStep3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKForgetStep3ViewController.h; sourceTree = "<group>"; };
+		86BB7C142501DBEC006859DD /* DKForgetStep3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKForgetStep3ViewController.m; sourceTree = "<group>"; };
 		86C6A28424E37C37002C26F8 /* BeelinkC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeelinkC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C6A28724E37C37002C26F8 /* DKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKAppDelegate.h; sourceTree = "<group>"; };
 		86C6A28824E37C37002C26F8 /* DKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKAppDelegate.m; sourceTree = "<group>"; };
@@ -1063,6 +1078,16 @@
 				864E351324EA6D9A005F7583 /* DKLoginViewController.m */,
 				86B2C1B324F5FCF900A59F83 /* DKAccountViewController.h */,
 				86B2C1B424F5FCF900A59F83 /* DKAccountViewController.m */,
+				86B9D92424F9E82C00113CE7 /* DKRegisterStep1ViewController.h */,
+				86B9D92524F9E82C00113CE7 /* DKRegisterStep1ViewController.m */,
+				86B9D92724F9E83A00113CE7 /* DKRegisterStep2ViewController.h */,
+				86B9D92824F9E83A00113CE7 /* DKRegisterStep2ViewController.m */,
+				86BB7C0D2501DBD5006859DD /* DKForgetStep1ViewController.h */,
+				86BB7C0E2501DBD5006859DD /* DKForgetStep1ViewController.m */,
+				86BB7C102501DBE1006859DD /* DKForgetStep2ViewController.h */,
+				86BB7C112501DBE1006859DD /* DKForgetStep2ViewController.m */,
+				86BB7C132501DBEC006859DD /* DKForgetStep3ViewController.h */,
+				86BB7C142501DBEC006859DD /* DKForgetStep3ViewController.m */,
 			);
 			path = ViewContoller;
 			sourceTree = "<group>";
@@ -1379,6 +1404,7 @@
 				864E34B524EA6BFD005F7583 /* DDHintView.m in Sources */,
 				864E34B624EA6BFD005F7583 /* UISearchBar+DKExtension.m in Sources */,
 				864E34D024EA6BFD005F7583 /* EasyTextTypes.m in Sources */,
+				86B9D92624F9E82C00113CE7 /* DKRegisterStep1ViewController.m in Sources */,
 				864E352124EA7872005F7583 /* UIColor+DKColor.m in Sources */,
 				864E34FC24EA6BFD005F7583 /* DXShareModel.m in Sources */,
 				864E34E224EA6BFD005F7583 /* EasyLodingGlobalConfig.m in Sources */,
@@ -1386,6 +1412,7 @@
 				86B2C1B524F5FCF900A59F83 /* DKAccountViewController.m in Sources */,
 				864E34D624EA6BFD005F7583 /* EasyAlertTypes.m in Sources */,
 				864E34A124EA6BFD005F7583 /* DKBaseModel.m in Sources */,
+				86BB7C122501DBE1006859DD /* DKForgetStep2ViewController.m in Sources */,
 				864E34AD24EA6BFD005F7583 /* NSString+JLHDate.m in Sources */,
 				864E34DF24EA6BFD005F7583 /* EasyLodingTypes.m in Sources */,
 				864E34FE24EA6BFD005F7583 /* XMTextView.m in Sources */,
@@ -1395,7 +1422,9 @@
 				864E350524EA6BFD005F7583 /* JMTabBarController.m in Sources */,
 				864E34CB24EA6BFD005F7583 /* BRAddressPickerView.m in Sources */,
 				864E34A324EA6BFD005F7583 /* DKBaseViewController.m in Sources */,
+				86BB7C152501DBEC006859DD /* DKForgetStep3ViewController.m in Sources */,
 				864E34E124EA6BFD005F7583 /* EasyLodingConfig.m in Sources */,
+				86BB7C0F2501DBD5006859DD /* DKForgetStep1ViewController.m in Sources */,
 				864E34A024EA6BFD005F7583 /* DKBaseTableViewCell.m in Sources */,
 				864E34EB24EA6BFD005F7583 /* SGPageContentCollectionView.m in Sources */,
 				864E34D324EA6BFD005F7583 /* EasyEmptyPart.m in Sources */,
@@ -1424,6 +1453,7 @@
 				864E34BA24EA6BFD005F7583 /* UIViewController+PopoutProcess.m in Sources */,
 				86C6A29A24E37C38002C26F8 /* main.m in Sources */,
 				864E34B824EA6BFD005F7583 /* WSLWaterFlowLayout.m in Sources */,
+				86B9D92924F9E83A00113CE7 /* DKRegisterStep2ViewController.m in Sources */,
 				864E34AB24EA6BFD005F7583 /* NSObject+CommonLogicDispose.m in Sources */,
 				864E34A624EA6BFD005F7583 /* NSString+DKFormat.m in Sources */,
 				864E350724EA6BFD005F7583 /* JMTabBarButton.m in Sources */,

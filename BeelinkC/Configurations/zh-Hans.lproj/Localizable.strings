@@ -20,11 +20,44 @@
 "login_input_account" = "请输入账号（手机号/邮箱）";
 "login_input_pass" = "请输入账号密码";
 "login_btn_forget-pass" = "忘记密码？";
+"register_subTitle_step1" = "我们将尊重您的隐私并严格保密";
+"register_subTitle_step2" = "请设置您的账号登录密码";
 "register_subTitle_prefix" = "已有Beelink账号，立即";
 "register_subTitle_suffix" = " 登录 ";
 "register_title" = "注册";
 "register_btn_next" = "下一步";
 "register_agree" = "勾选表示同意";
 "register_protocol" = "《用户注册协议和隐私政策》";
+"register_input_firstName" = "名字";
+"register_input_lastName" = "姓氏";
+"register_input_email" = "邮箱";
+"register_input_firstName_input" = "请输入您的名字";
+"register_input_lastName_input" = "请输入您的姓氏";
+"register_input_email_input" = "请输入您的邮箱";
+"register_interest" = "兴趣";
+"register_select_default" = "请选择您的级别 ";
+"register_birthday" = "生日";
+"register_birthday_default" = "请选择您的出生日期";
+"register_set_pass" = "设置密码";
+"register_affirm_pass" = "确认密码";
+"register_set_pass_input" = "请设置您的登录密码";
+"register_affirm_pass_input" = "请再次输入密码";
+"register_btn_register" = "立即注册";
+
+"forget_next" = "Next";
+"forget_step1_title" = "忘记密码";
+"forget_step1_subTitle" = "验证您注册的Beelink账号";
+"forget_step1_account" = "账号";
+"forget_step1_account_input" = "请输入您的手机号/邮箱";
+"forget_step2_title" = "输入验证码";
+"forget_step2_subTitle_prefix" = "验证码已发送至手机 ";
+"forget_step2_subTitle_suffix" = "";
+"forget_step2_sms_hint" = " 后，可重新发送验证码";
+"forget_step3_title" = "重置密码";
+"forget_step3_subTitle" = "请重新设置登录密码";
+"forget_step3_btn_forget" = "确认修改";
+
+
+
 "home_title" = "您好，世界";
 

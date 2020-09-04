@@ -84,7 +84,7 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     if (self.navigationController.viewControllers.count > 1) {
-        [self addLeftBarButtonWithImage:KImage(@"nav_back") action:@selector(goBack)];
+        [self addLeftBarButtonWithImage:KImage(@"nav_back_black") action:@selector(goBack)];
     }
     self.view.backgroundColor = color_white10;//[UIColor whiteColor];
 //    [self observeNetworkStart];

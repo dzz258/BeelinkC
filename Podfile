@@ -11,6 +11,7 @@ target 'BeelinkC' do
   pod 'Masonry'
   pod 'SPAlertController', '~> 3.0.1'
   pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
+  pod 'WGDigitField'  
   # ******通用*******
   pod 'WBLoadingIndicatorView'
 end

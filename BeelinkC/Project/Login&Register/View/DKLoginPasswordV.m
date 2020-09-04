@@ -22,6 +22,7 @@
 @property(nonatomic, strong) UIView *thirdLoginV;
 @property (nonatomic,strong) UITextField *text_1F;//账号（手机号）
 @property (nonatomic,strong) UITextField *text_2F;//验证码
+
 @end
 
 @implementation DKLoginPasswordV
@@ -203,6 +204,7 @@
                 [btn setTitle:kLocal_text(@"login_btn_forget-pass") forState:UIControlStateNormal];
                 btn.titleLabel.font = KF_BH_F(15);
                 btn.tag = 5;
+                [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
                 [inputV addSubview:btn];
                 [inputV addSubview:self.text_2F];
 

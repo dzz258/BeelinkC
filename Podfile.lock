@@ -34,6 +34,8 @@ PODS:
   - WBLoadingIndicatorView (1.1.4):
     - WBLoadingIndicatorView/WBAnimations (= 1.1.4)
   - WBLoadingIndicatorView/WBAnimations (1.1.4)
+  - WGDigitField (1.0.1):
+    - Masonry
 
 DEPENDENCIES:
   - AFNetworking
@@ -46,6 +48,7 @@ DEPENDENCIES:
   - SDWebImage
   - SPAlertController (~> 3.0.1)
   - WBLoadingIndicatorView
+  - WGDigitField
 
 SPEC REPOS:
   trunk:
@@ -58,6 +61,7 @@ SPEC REPOS:
     - SDWebImage
     - SPAlertController
     - WBLoadingIndicatorView
+    - WGDigitField
 
 EXTERNAL SOURCES:
   ReactiveCocoa:
@@ -80,7 +84,8 @@ SPEC CHECKSUMS:
   SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
   SPAlertController: 174db68db4b5b59b426df4fe77b1bd466b5e7f8f
   WBLoadingIndicatorView: b3847faf2f916c4aedf57067fc59eda205d05227
+  WGDigitField: 4200f178c6eb08589cb662362df2097f8064e03a
 
-PODFILE CHECKSUM: 87b3eaf5b9018b70db64894393c49f786027d6c6
+PODFILE CHECKSUM: 9ceffeab18ceb1a024acf21e9f3fe248ad523d69
 
 COCOAPODS: 1.9.3

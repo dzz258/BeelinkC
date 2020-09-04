@@ -44,14 +44,18 @@
     }];
     
     [self.title_lineV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.titleL.mas_left);
         make.bottom.equalTo(self.titleL.mas_bottom).offset(kWidth_fact(2));
-        make.right.equalTo(self.titleL.mas_right);
+        make.centerX.equalTo(self.titleL.mas_centerX);
         make.height.offset(kWidth_fact(6));
+        if ([kLocal_text(@"language") isEqualToString:@"en"]) {
+            make.width.offset(kWidth_fact(90));
+        }else{
+            make.width.offset(kWidth_fact(50));
+        }
     }];
     
     if ([kLocal_text(@"language") isEqualToString:@"en"]) {
-        [_title_lineV.layer addSublayer:[UIColor color_shade:CGSizeMake(kWidth_fact(80), kWidth_fact(6)) colors:@[@"#00dac2",@"#fffa18"]]];
+        [_title_lineV.layer addSublayer:[UIColor color_shade:CGSizeMake(kWidth_fact(90), kWidth_fact(6)) colors:@[@"#00dac2",@"#fffa18"]]];
     }else{
         [_title_lineV.layer addSublayer:[UIColor color_shade:CGSizeMake(kWidth_fact(50), kWidth_fact(6)) colors:@[@"#00dac2",@"#fffa18"]]];
     }

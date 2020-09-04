@@ -10,6 +10,8 @@
 #import "DKLoginMobileV.h"
 #import "DKLoginPasswordV.h"
 #import "DKRegisterMobileV.h"
+#import "DKRegisterStep1ViewController.h"
+#import "DKForgetStep1ViewController.h"
 
 @interface DKAccountViewController ()
 
@@ -99,6 +101,9 @@
             }else if (tag == 3){
                 weakself.showType = @"login_mobile";
                 weakself.tagType = 1;
+            }else if (tag == 5){
+                DKForgetStep1ViewController *forgetVc = [[DKForgetStep1ViewController alloc] init];
+                [weakself.navigationController pushViewController:forgetVc animated:YES];
             }
             [weakself managePage];
         };
@@ -113,9 +118,11 @@
             if (tag == 1) {
                 weakself.showType = @"login_mobile";
                 weakself.tagType = 1;
-            }else if (tag == 3){
+            }else if (tag == 2){
 //                weakself.showType = @"login_mobile";
 //                weakself.tagType = 1;
+                DKRegisterStep1ViewController *registerVC = [[DKRegisterStep1ViewController alloc] init];
+                [weakself.navigationController pushViewController:registerVC animated:YES];
             }
             [weakself managePage];
         };
