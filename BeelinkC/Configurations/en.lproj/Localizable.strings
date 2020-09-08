@@ -56,5 +56,7 @@
 "forget_step3_title" = "Reset your password";
 "forget_step3_subTitle" = "Please input your new password";
 "forget_step3_btn_forget" = "Reset";
+"forget_step3_set_input" = "Min. 8 characters";
+"forget_step3_affirm_pass_input" = "Re-enter you password";
 
 "home_title" = "holle, world";

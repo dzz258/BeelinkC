@@ -44,7 +44,7 @@
 "register_affirm_pass_input" = "请再次输入密码";
 "register_btn_register" = "立即注册";
 
-"forget_next" = "Next";
+"forget_next" = "下一步";
 "forget_step1_title" = "忘记密码";
 "forget_step1_subTitle" = "验证您注册的Beelink账号";
 "forget_step1_account" = "账号";
@@ -56,7 +56,8 @@
 "forget_step3_title" = "重置密码";
 "forget_step3_subTitle" = "请重新设置登录密码";
 "forget_step3_btn_forget" = "确认修改";
-
+"forget_step3_set_input" = "请重新设置密码";
+"forget_step3_affirm_pass_input" = "请再次输入密码";
 
 
 "home_title" = "您好，世界";

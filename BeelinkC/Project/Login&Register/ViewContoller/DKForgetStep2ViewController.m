@@ -8,6 +8,7 @@
 
 #import "DKForgetStep2ViewController.h"
 #import <WGDigitField/WGDigitField.h>
+#import "DKForgetStep3ViewController.h"
 
 @interface BackgroundWithBottomLine : UIView
 
@@ -175,8 +176,8 @@
 -(void)btnClick:(UIButton *)btn{
     NSLog(@"%ld",(long)btn.tag);
     if (btn.tag == 2) {
-//        DKForgetStep2ViewController *forgetVC = [[DKForgetStep2ViewController alloc]init];
-//        [self.navigationController pushViewController:forgetVC animated:YES];
+        DKForgetStep3ViewController *forgetVC = [[DKForgetStep3ViewController alloc]init];
+        [self.navigationController pushViewController:forgetVC animated:YES];
     }
 //    if (self.click) {
 //        self.click(btn.tag);
