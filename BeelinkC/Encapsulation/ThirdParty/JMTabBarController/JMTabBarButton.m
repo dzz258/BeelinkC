@@ -41,7 +41,6 @@
         [self addSubview:self.shield_Bg_V];
         
         self.imageView = [[UIImageView alloc] init];
-        self.imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self addSubview:self.imageView];
 
         self.backgroundColor=[UIColor clearColor];

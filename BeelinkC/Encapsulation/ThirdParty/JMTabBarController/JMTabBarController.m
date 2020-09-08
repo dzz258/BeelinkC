@@ -34,9 +34,7 @@
 }
 
 - (instancetype)initWithTabBarControllers:(NSArray *)controllers NorImageArr:(NSArray *)norImageArr SelImageArr:(NSArray *)selImageArr TitleArr:(NSArray *)titleArr Config:(JMConfig *)config{
-    
     self = [super init];
-    
     if (self) {
         self.viewControllers = controllers;
         self.JM_TabBar = [[JMTabBar alloc] initWithFrame:self.tabBar.frame norImageArr:norImageArr SelImageArr:selImageArr TitleArr:titleArr Config:config];
@@ -51,17 +49,18 @@
         //KVO
         [self addObserver:self forKeyPath:@"selectedIndex" options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:nil];
     }
-    
     return self;
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     NSInteger selectedIndex = [change[@"new"] integerValue];
     self.JM_TabBar.selectedIndex = selectedIndex;
+    
 }
 
 - (void)tabBar:(JMTabBar *)tabBar didSelectIndex:(NSInteger)selectIndex {
     self.selectedIndex = selectIndex;
+
 }
 
 - (void)dealloc {

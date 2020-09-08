@@ -10,6 +10,13 @@
 #import "DKAccountViewController.h"
 #import "DKBaseNavigationViewController.h"
 #import <IQKeyboardManager/IQKeyboardManager.h>
+#import "DKHomeViewController.h"
+#import "DKLiveViewController.h"
+#import "DKMineViewController.h"
+#import "DKVideoViewController.h"
+#import "DKSubscribeViewController.h"
+#import "JMTabBarController.h"
+#import "JMConfig.h"
 
 @interface DKSceneDelegate ()
 
@@ -26,8 +33,8 @@
     manager.enable = YES;
     manager.shouldResignOnTouchOutside = YES;
     manager.enableAutoToolbar = NO;
-    
-    [self goLogin];
+    [self logout];
+//    [self goLogin];
 }
 
 -(void)goLogin{
@@ -37,7 +44,82 @@
     loginVC.isHideNav = YES;
     self.window.rootViewController = [[DKBaseNavigationViewController alloc] initWithRootViewController:loginVC];
 }
+-(void)logout{
+    
+//    if ([[[DDUserInfo share] getUserName] length] == 0) {
+//        [self setUserNickname];
+//        return;
+//    }
+    
+    //已登陆
+    typedef void (^Animation)(void);
+    UIWindow* window = self.window;
+    Animation animation = ^{
+        BOOL oldState = [UIView areAnimationsEnabled];
+        [UIView setAnimationsEnabled:NO];
+        
+        //初始化标题数组, 未选择图片数组, 选择图片数组, 控制器数组
+        /*********创建跟试图控制器*********/
+        
+        //初始化标题数组, 未选择图片数组, 选择图片数组, 控制器数组
+        NSArray *titleArr = @[@"大领读",@"书城",@"书架",@"我的"];
+        NSArray *imageNormalArr = @[@"tabbar_icon_3",@"tabbar_icon_2",@"tabbar_icon_1",@"tabbar_icon_4"];
+        
+        NSArray *imageSelectedArr = @[@"",@"",@"",@""];
+        
 
+        //        NSArray *imageSelectedArr = @[@"tabbar_icon_1_select",@"tabbar_icon_2_select",@"tabbar_icon_3_select",@"tabbar_icon_4_select"];
+        NSMutableArray *controllersArr =[NSMutableArray array];
+        
+        DKHomeViewController *leadReadVC = [[DKHomeViewController alloc] init];
+        leadReadVC.navigationItem.title = @"大领读";
+        leadReadVC.isHideNav = YES;
+        
+        DKLiveViewController *homeVC = [[DKLiveViewController alloc] init];
+        homeVC.navigationItem.title = @"书城";
+        homeVC.isHideNav = YES;
+        
+        DKVideoViewController * bookrackVC = [[DKVideoViewController alloc] init];
+        bookrackVC.navigationItem.title = @"书架";
+        bookrackVC.isHideNav = YES;
+        
+//        DKChatterBoxViewController *chatterBoxVC = [[DKChatterBoxViewController alloc] init];
+//        chatterBoxVC.navigationItem.title = @"话匣子";
+//        chatterBoxVC.isHideNav = YES;
+        
+        DKSubscribeViewController *myVC = [[DKSubscribeViewController alloc] init];
+        myVC.navigationItem.title = @"我的";
+        myVC.isHideNav = YES;
+        
+        NSArray *array=@[leadReadVC,homeVC,bookrackVC,myVC];
+        
+        for (int i = 0; i < titleArr.count; i++) {
+            [controllersArr addObject:[[DKBaseNavigationViewController alloc] initWithRootViewController:array[i]]];
+        }
+        //初始化配置信息
+        JMConfig *config = [JMConfig config];
+        config.tabBarAnimType=JMConfigTabBarAnimTypeBoundsMax;
+        config.isClearTabBarTopLine=NO;
+        config.titleOffset = 5;
+        config.tabBarTopLineColor=[UIColor clearColor];
+        config.norTitleColor = kColor_hex(@"#666666");
+        config.selTitleColor= kColor_hex(@"#000000");
+        //        JMTabBarController *tabBarVc = [[JMTabBarController alloc] initWithTabBarControllers:controllersArr NorImageArr:imageNormalArr SelImageArr:imageSelectedArr TitleArr:titleArr Config:config andTag:1];
+        JMTabBarController *tabBarVc = [[JMTabBarController alloc] initWithTabBarControllers:controllersArr NorImageArr:imageNormalArr SelImageArr:imageSelectedArr TitleArr:titleArr Config:config];
+//        tabBarVc.selectedIndex = 1;
+        self.window.rootViewController = tabBarVc;
+        
+//        LZTabBarVC *tbc = [[LZTabBarVC alloc] init];
+//        self.window.rootViewController = tbc;
+
+        [UIView setAnimationsEnabled:oldState];
+    };
+    [UIView transitionWithView:window
+                      duration:0.5f
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:animation
+                    completion:nil];
+}
 - (void)sceneDidDisconnect:(UIScene *)scene {
     // Called as the scene is being released by the system.
     // This occurs shortly after the scene enters the background, or when its session is discarded.

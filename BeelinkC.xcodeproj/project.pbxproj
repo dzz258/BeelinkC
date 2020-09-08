@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		58EFA6D140D08A1BDE2F20E5 /* libPods-BeelinkC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9AA23D15D769DDECE9871F /* libPods-BeelinkC.a */; };
+		8602B8692507A17A0048445C /* DKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8602B8682507A17A0048445C /* DKHomeViewController.m */; };
+		8602B86C2507A1A40048445C /* DKLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8602B86B2507A1A40048445C /* DKLiveViewController.m */; };
+		8602B86F2507A1B70048445C /* DKMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8602B86E2507A1B70048445C /* DKMineViewController.m */; };
+		8602B8722507A1DC0048445C /* DKSubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8602B8712507A1DC0048445C /* DKSubscribeViewController.m */; };
+		8602B8752507A1E80048445C /* DKVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8602B8742507A1E80048445C /* DKVideoViewController.m */; };
 		8646CD2224F896E2000CCFC7 /* DKDropBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646CD2124F896E2000CCFC7 /* DKDropBtn.m */; };
 		8646CD2524F8AF6A000CCFC7 /* DKCountDownBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646CD2424F8AF6A000CCFC7 /* DKCountDownBtn.m */; };
 		864E338C24EA1BFF005F7583 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 864E338E24EA1BFF005F7583 /* Localizable.strings */; };
@@ -164,6 +169,16 @@
 		427F062157BB167EDCBC948A /* Pods-BeelinkC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeelinkC.debug.xcconfig"; path = "Target Support Files/Pods-BeelinkC/Pods-BeelinkC.debug.xcconfig"; sourceTree = "<group>"; };
 		5A9AA23D15D769DDECE9871F /* libPods-BeelinkC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeelinkC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		734E57126637B02E576D527C /* Pods-BeelinkC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeelinkC.release.xcconfig"; path = "Target Support Files/Pods-BeelinkC/Pods-BeelinkC.release.xcconfig"; sourceTree = "<group>"; };
+		8602B8672507A17A0048445C /* DKHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKHomeViewController.h; sourceTree = "<group>"; };
+		8602B8682507A17A0048445C /* DKHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKHomeViewController.m; sourceTree = "<group>"; };
+		8602B86A2507A1A40048445C /* DKLiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKLiveViewController.h; sourceTree = "<group>"; };
+		8602B86B2507A1A40048445C /* DKLiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKLiveViewController.m; sourceTree = "<group>"; };
+		8602B86D2507A1B70048445C /* DKMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKMineViewController.h; sourceTree = "<group>"; };
+		8602B86E2507A1B70048445C /* DKMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKMineViewController.m; sourceTree = "<group>"; };
+		8602B8702507A1DC0048445C /* DKSubscribeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSubscribeViewController.h; sourceTree = "<group>"; };
+		8602B8712507A1DC0048445C /* DKSubscribeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSubscribeViewController.m; sourceTree = "<group>"; };
+		8602B8732507A1E80048445C /* DKVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKVideoViewController.h; sourceTree = "<group>"; };
+		8602B8742507A1E80048445C /* DKVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKVideoViewController.m; sourceTree = "<group>"; };
 		8646CD2024F896E2000CCFC7 /* DKDropBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKDropBtn.h; sourceTree = "<group>"; };
 		8646CD2124F896E2000CCFC7 /* DKDropBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKDropBtn.m; sourceTree = "<group>"; };
 		8646CD2324F8AF6A000CCFC7 /* DKCountDownBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKCountDownBtn.h; sourceTree = "<group>"; };
@@ -469,6 +484,211 @@
 				5A9AA23D15D769DDECE9871F /* libPods-BeelinkC.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8602B84E2507A15D0048445C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				8602B84F2507A15D0048445C /* ViewModel */,
+				8602B8502507A15D0048445C /* ViewContoller */,
+				8602B8512507A15D0048445C /* Model */,
+				8602B8522507A15D0048445C /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		8602B84F2507A15D0048445C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8602B8502507A15D0048445C /* ViewContoller */ = {
+			isa = PBXGroup;
+			children = (
+				8602B86D2507A1B70048445C /* DKMineViewController.h */,
+				8602B86E2507A1B70048445C /* DKMineViewController.m */,
+			);
+			path = ViewContoller;
+			sourceTree = "<group>";
+		};
+		8602B8512507A15D0048445C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8602B8522507A15D0048445C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8602B8532507A15D0048445C /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				8602B8542507A15D0048445C /* ViewModel */,
+				8602B8552507A15D0048445C /* ViewContoller */,
+				8602B8562507A15D0048445C /* Model */,
+				8602B8572507A15D0048445C /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		8602B8542507A15D0048445C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8602B8552507A15D0048445C /* ViewContoller */ = {
+			isa = PBXGroup;
+			children = (
+				8602B86A2507A1A40048445C /* DKLiveViewController.h */,
+				8602B86B2507A1A40048445C /* DKLiveViewController.m */,
+			);
+			path = ViewContoller;
+			sourceTree = "<group>";
+		};
+		8602B8562507A15D0048445C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8602B8572507A15D0048445C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8602B8582507A15D0048445C /* Subscribe */ = {
+			isa = PBXGroup;
+			children = (
+				8602B8592507A15D0048445C /* ViewModel */,
+				8602B85A2507A15D0048445C /* ViewContoller */,
+				8602B85B2507A15D0048445C /* Model */,
+				8602B85C2507A15D0048445C /* View */,
+			);
+			path = Subscribe;
+			sourceTree = "<group>";
+		};
+		8602B8592507A15D0048445C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8602B85A2507A15D0048445C /* ViewContoller */ = {
+			isa = PBXGroup;
+			children = (
+				8602B8702507A1DC0048445C /* DKSubscribeViewController.h */,
+				8602B8712507A1DC0048445C /* DKSubscribeViewController.m */,
+			);
+			path = ViewContoller;
+			sourceTree = "<group>";
+		};
+		8602B85B2507A15D0048445C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8602B85C2507A15D0048445C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8602B85D2507A15E0048445C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8602B85E2507A15E0048445C /* ViewModel */,
+				8602B85F2507A15E0048445C /* ViewContoller */,
+				8602B8602507A15E0048445C /* Model */,
+				8602B8612507A15E0048445C /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8602B85E2507A15E0048445C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8602B85F2507A15E0048445C /* ViewContoller */ = {
+			isa = PBXGroup;
+			children = (
+				8602B8672507A17A0048445C /* DKHomeViewController.h */,
+				8602B8682507A17A0048445C /* DKHomeViewController.m */,
+			);
+			path = ViewContoller;
+			sourceTree = "<group>";
+		};
+		8602B8602507A15E0048445C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8602B8612507A15E0048445C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8602B8622507A15E0048445C /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				8602B8632507A15E0048445C /* ViewModel */,
+				8602B8642507A15E0048445C /* ViewContoller */,
+				8602B8652507A15E0048445C /* Model */,
+				8602B8662507A15E0048445C /* View */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		8602B8632507A15E0048445C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8602B8642507A15E0048445C /* ViewContoller */ = {
+			isa = PBXGroup;
+			children = (
+				8602B8732507A1E80048445C /* DKVideoViewController.h */,
+				8602B8742507A1E80048445C /* DKVideoViewController.m */,
+			);
+			path = ViewContoller;
+			sourceTree = "<group>";
+		};
+		8602B8652507A15E0048445C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8602B8662507A15E0048445C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		864E338924EA1BC9005F7583 /* Configurations */ = {
@@ -1015,17 +1235,17 @@
 		864E348E24EA6BFD005F7583 /* JMTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				864E348F24EA6BFD005F7583 /* JMTabBarController.m */,
-				864E349024EA6BFD005F7583 /* JMTabBar.h */,
-				864E349124EA6BFD005F7583 /* JMConfig.m */,
 				864E349224EA6BFD005F7583 /* JMBadgeValue.h */,
-				864E349324EA6BFD005F7583 /* JMTabBarButton.m */,
-				864E349424EA6BFD005F7583 /* JMTabBarController.h */,
-				864E349524EA6BFD005F7583 /* JMUtility */,
+				864E349F24EA6BFD005F7583 /* JMBadgeValue.m */,
 				864E349C24EA6BFD005F7583 /* JMConfig.h */,
+				864E349124EA6BFD005F7583 /* JMConfig.m */,
+				864E349024EA6BFD005F7583 /* JMTabBar.h */,
 				864E349D24EA6BFD005F7583 /* JMTabBar.m */,
 				864E349E24EA6BFD005F7583 /* JMTabBarButton.h */,
-				864E349F24EA6BFD005F7583 /* JMBadgeValue.m */,
+				864E349324EA6BFD005F7583 /* JMTabBarButton.m */,
+				864E349424EA6BFD005F7583 /* JMTabBarController.h */,
+				864E348F24EA6BFD005F7583 /* JMTabBarController.m */,
+				864E349524EA6BFD005F7583 /* JMUtility */,
 			);
 			path = JMTabBarController;
 			sourceTree = "<group>";
@@ -1046,6 +1266,11 @@
 		864E350D24EA6D9A005F7583 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				8602B85D2507A15E0048445C /* Home */,
+				8602B8532507A15D0048445C /* Live */,
+				8602B84E2507A15D0048445C /* Mine */,
+				8602B8582507A15D0048445C /* Subscribe */,
+				8602B8622507A15E0048445C /* Video */,
 				864E350E24EA6D9A005F7583 /* Login&Register */,
 			);
 			path = Project;
@@ -1267,6 +1492,7 @@
 		86C6A27C24E37C37002C26F8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DK;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = Gavin;
 				TargetAttributes = {
@@ -1409,9 +1635,11 @@
 				864E34FC24EA6BFD005F7583 /* DXShareModel.m in Sources */,
 				864E34E224EA6BFD005F7583 /* EasyLodingGlobalConfig.m in Sources */,
 				864E350C24EA6BFD005F7583 /* JMBadgeValue.m in Sources */,
+				8602B86C2507A1A40048445C /* DKLiveViewController.m in Sources */,
 				86B2C1B524F5FCF900A59F83 /* DKAccountViewController.m in Sources */,
 				864E34D624EA6BFD005F7583 /* EasyAlertTypes.m in Sources */,
 				864E34A124EA6BFD005F7583 /* DKBaseModel.m in Sources */,
+				8602B86F2507A1B70048445C /* DKMineViewController.m in Sources */,
 				86BB7C122501DBE1006859DD /* DKForgetStep2ViewController.m in Sources */,
 				864E34AD24EA6BFD005F7583 /* NSString+JLHDate.m in Sources */,
 				864E34DF24EA6BFD005F7583 /* EasyLodingTypes.m in Sources */,
@@ -1438,6 +1666,7 @@
 				864E34F924EA6BFD005F7583 /* DXSharePlatform.m in Sources */,
 				864E350924EA6BFD005F7583 /* CAAnimation+JMAnimation.m in Sources */,
 				864E34C924EA6BFD005F7583 /* BRAddressModel.m in Sources */,
+				8602B8752507A1E80048445C /* DKVideoViewController.m in Sources */,
 				864E34C524EA6BFD005F7583 /* BRStringPickerView.m in Sources */,
 				864E34F824EA6BFD005F7583 /* NSObject+SXRuntime.m in Sources */,
 				864E34D424EA6BFD005F7583 /* EasyEmptyGlobalConfig.m in Sources */,
@@ -1447,6 +1676,7 @@
 				864E34D524EA6BFD005F7583 /* EasyEmptyTypes.m in Sources */,
 				864E34BB24EA6BFD005F7583 /* DKTagView.m in Sources */,
 				864E34F424EA6BFD005F7583 /* XHWebImageAutoSizeConst.m in Sources */,
+				8602B8692507A17A0048445C /* DKHomeViewController.m in Sources */,
 				864E34A524EA6BFD005F7583 /* UIViewController+XHPhoto.m in Sources */,
 				864E34D824EA6BFD005F7583 /* EasyAlertView.m in Sources */,
 				864E350B24EA6BFD005F7583 /* JMTabBar.m in Sources */,
@@ -1504,6 +1734,7 @@
 				864E34DD24EA6BFD005F7583 /* EasyShowLabel.m in Sources */,
 				864E34DC24EA6BFD005F7583 /* EasyShowUtils.m in Sources */,
 				864E34FA24EA6BFD005F7583 /* DXShareView.m in Sources */,
+				8602B8722507A1DC0048445C /* DKSubscribeViewController.m in Sources */,
 				864E34EE24EA6BFD005F7583 /* DKNotNetWorkHintViewController.m in Sources */,
 				864E34B924EA6BFD005F7583 /* UIImageView+CornerRadius.m in Sources */,
 			);

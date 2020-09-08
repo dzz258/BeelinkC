@@ -38,6 +38,9 @@
 @property (nonatomic, strong) NSMutableArray *titleImageArrM;
 /** 大按钮index */
 @property (nonatomic, assign) NSInteger bigTag;
+
+@property (nonatomic, strong) UIImageView *btnBgImageV;
+
 @end
 
 @implementation JMTabBar
@@ -69,9 +72,17 @@
     }
     return _saveTabBarArrM;
 }
+-(UIImageView *)btnBgImageV{
+    if (!_btnBgImageV) {
+       _btnBgImageV = [[UIImageView alloc] init];
+       _btnBgImageV.frame = CGRectMake(0,self.height-64, 64, 64);
+    }
+    return _btnBgImageV;
+}
 - (instancetype)initWithFrame:(CGRect)frame norImageArr:(NSArray *)norImageArr SelImageArr:(NSArray *)selImageArr TitleArr:(NSArray *)titleArr Config:(JMConfig *)config andTag:(NSInteger)tag{
     if (self = [super initWithFrame:frame]) {
         self.bigTag = tag;
+        
         for (int i = 0; i < titleArr.count; i++) {
             JMTabBarButton *tbBtn = [[JMTabBarButton alloc] init];
             tbBtn.imageView.image = [UIImage imageNamed:norImageArr[i]];
@@ -118,6 +129,16 @@
 - (instancetype)initWithFrame:(CGRect)frame norImageArr:(NSArray *)norImageArr SelImageArr:(NSArray *)selImageArr TitleArr:(NSArray *)titleArr Config:(JMConfig *)config{
     if (self = [super initWithFrame:frame]) {
         self.bigTag = -1;
+        
+         [self addSubview:self.btnBgImageV];
+        
+        kRedius_Space(self, 0, CGSizeMake(1, 1), 0.2, kColor_hex(@"#9C99A8"));
+//        NSArray *imageSelectedArr = @[@"tabbar_icon_1_select",@"tabbar_icon_2_select",@"tabbar_icon_3_select",@"tabbar_icon_4_select"];
+//
+//        self.btnBgImageV.image = KImage(imageSelectedArr[1]);
+////        self.tabBar_title.text = titleArr[1];
+//        self.btnBgImageV.centerX = 1*kScreenWidth/4+kScreenWidth/4/2;
+        
         for (int i = 0; i < titleArr.count; i++) {
             JMTabBarButton *tbBtn = [[JMTabBarButton alloc] init];
             tbBtn.imageView.image = [UIImage imageNamed:norImageArr[i]];
@@ -135,7 +156,6 @@
             self.titleImageArrM = [NSMutableArray arrayWithArray:titleArr];
             self.norImageArrM = [NSMutableArray arrayWithArray:norImageArr];
             self.selImageArrM = [NSMutableArray arrayWithArray:selImageArr];
-            
         }
         
         //背景颜色处理
@@ -188,28 +208,22 @@
 }
 
 - (void)tapClick:(UITapGestureRecognizer *)tap {
-//    if (tap.view.tag == 1) {
-//        [[DDUserInfo share] isLoginGoNo:self.viewController block:^(BOOL isLogin) {
-//            if (isLogin) {
-//                [self setUpSelectedIndex:tap.view.tag];
-//
-//                if ([self.myDelegate respondsToSelector:@selector(tabBar:didSelectIndex:)]) {
-//                    [self.myDelegate tabBar:self didSelectIndex:tap.view.tag];
-//                }
-//            }
-//        }];
-//    }else{
-        [self setUpSelectedIndex:tap.view.tag];
-        
-        if ([self.myDelegate respondsToSelector:@selector(tabBar:didSelectIndex:)]) {
-            [self.myDelegate tabBar:self didSelectIndex:tap.view.tag];
-        }
-//    }
+    [self setUpSelectedIndex:tap.view.tag];
     
+    if ([self.myDelegate respondsToSelector:@selector(tabBar:didSelectIndex:)]) {
+        [self.myDelegate tabBar:self didSelectIndex:tap.view.tag];
+    }
 }
+
 - (void)setSelectedIndex:(NSInteger)selectedIndex {
     _selectedIndex = selectedIndex;
     
+    NSArray *imageSelectedArr = @[@"tabbar_icon_3_select",@"tabbar_icon_2_select",@"tabbar_icon_1_select",@"tabbar_icon_4_select"];
+    
+    self.btnBgImageV.image = KImage(imageSelectedArr[selectedIndex]);
+    self.btnBgImageV.centerX = selectedIndex*KScreen_Width/imageSelectedArr.count+KScreen_Width/imageSelectedArr.count*0.5;
+//    self.btnBgImageV.centerY = 5;
+
     [self setUpSelectedIndex:selectedIndex];
 }
 
