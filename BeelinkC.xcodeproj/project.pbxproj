@@ -125,6 +125,13 @@
 		864E351A24EA6D9A005F7583 /* DKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E351324EA6D9A005F7583 /* DKLoginViewController.m */; };
 		864E351B24EA6D9A005F7583 /* DKUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E351724EA6D9A005F7583 /* DKUserInfo.m */; };
 		864E352124EA7872005F7583 /* UIColor+DKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E352024EA7872005F7583 /* UIColor+DKColor.m */; };
+		8692C7E22508DA6B003E2434 /* DKHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692C7E12508DA6B003E2434 /* DKHomeCollectionViewCell.m */; };
+		8692C7E52508DC33003E2434 /* DKHomeCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692C7E42508DC33003E2434 /* DKHomeCollectionHeaderView.m */; };
+		8692C7E82508E5E2003E2434 /* ZFJRollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692C7E72508E5E2003E2434 /* ZFJRollView.m */; };
+		8692C7EB2508E5FC003E2434 /* DKHomeCollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692C7EA2508E5FC003E2434 /* DKHomeCollectionFooterView.m */; };
+		8692C7EF2508EB69003E2434 /* 128915.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8692C7EC2508EB68003E2434 /* 128915.jpg */; };
+		8692C7F02508EB69003E2434 /* 81239.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8692C7ED2508EB68003E2434 /* 81239.jpg */; };
+		8692C7F12508EB69003E2434 /* 48791.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8692C7EE2508EB69003E2434 /* 48791.jpg */; };
 		869CDA7324F756AD0094D034 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 869CDA7224F756AD0094D034 /* Images.xcassets */; };
 		869CDA7624F75A7A0094D034 /* DKLoginMobileV.m in Sources */ = {isa = PBXBuildFile; fileRef = 869CDA7524F75A7A0094D034 /* DKLoginMobileV.m */; };
 		869CDA7924F75AA10094D034 /* DKLoginPasswordV.m in Sources */ = {isa = PBXBuildFile; fileRef = 869CDA7824F75AA10094D034 /* DKLoginPasswordV.m */; };
@@ -139,7 +146,6 @@
 		86BB7C152501DBEC006859DD /* DKForgetStep3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BB7C142501DBEC006859DD /* DKForgetStep3ViewController.m */; };
 		86C6A28924E37C37002C26F8 /* DKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C6A28824E37C37002C26F8 /* DKAppDelegate.m */; };
 		86C6A28C24E37C37002C26F8 /* DKSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C6A28B24E37C37002C26F8 /* DKSceneDelegate.m */; };
-		86C6A28F24E37C37002C26F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C6A28E24E37C37002C26F8 /* ViewController.m */; };
 		86C6A29224E37C37002C26F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C6A29024E37C37002C26F8 /* Main.storyboard */; };
 		86C6A29424E37C38002C26F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C6A29324E37C38002C26F8 /* Assets.xcassets */; };
 		86C6A29724E37C38002C26F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C6A29524E37C38002C26F8 /* LaunchScreen.storyboard */; };
@@ -409,6 +415,17 @@
 		864E351724EA6D9A005F7583 /* DKUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKUserInfo.m; sourceTree = "<group>"; };
 		864E351F24EA7872005F7583 /* UIColor+DKColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+DKColor.h"; sourceTree = "<group>"; };
 		864E352024EA7872005F7583 /* UIColor+DKColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DKColor.m"; sourceTree = "<group>"; };
+		8692C7E02508DA6B003E2434 /* DKHomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKHomeCollectionViewCell.h; sourceTree = "<group>"; };
+		8692C7E12508DA6B003E2434 /* DKHomeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKHomeCollectionViewCell.m; sourceTree = "<group>"; };
+		8692C7E32508DC33003E2434 /* DKHomeCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKHomeCollectionHeaderView.h; sourceTree = "<group>"; };
+		8692C7E42508DC33003E2434 /* DKHomeCollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKHomeCollectionHeaderView.m; sourceTree = "<group>"; };
+		8692C7E62508E5E2003E2434 /* ZFJRollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFJRollView.h; sourceTree = "<group>"; };
+		8692C7E72508E5E2003E2434 /* ZFJRollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFJRollView.m; sourceTree = "<group>"; };
+		8692C7E92508E5FC003E2434 /* DKHomeCollectionFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKHomeCollectionFooterView.h; sourceTree = "<group>"; };
+		8692C7EA2508E5FC003E2434 /* DKHomeCollectionFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKHomeCollectionFooterView.m; sourceTree = "<group>"; };
+		8692C7EC2508EB68003E2434 /* 128915.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 128915.jpg; sourceTree = "<group>"; };
+		8692C7ED2508EB68003E2434 /* 81239.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 81239.jpg; sourceTree = "<group>"; };
+		8692C7EE2508EB69003E2434 /* 48791.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 48791.jpg; sourceTree = "<group>"; };
 		869CDA7224F756AD0094D034 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		869CDA7424F75A7A0094D034 /* DKLoginMobileV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKLoginMobileV.h; sourceTree = "<group>"; };
 		869CDA7524F75A7A0094D034 /* DKLoginMobileV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKLoginMobileV.m; sourceTree = "<group>"; };
@@ -437,8 +454,6 @@
 		86C6A28824E37C37002C26F8 /* DKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKAppDelegate.m; sourceTree = "<group>"; };
 		86C6A28A24E37C37002C26F8 /* DKSceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSceneDelegate.h; sourceTree = "<group>"; };
 		86C6A28B24E37C37002C26F8 /* DKSceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSceneDelegate.m; sourceTree = "<group>"; };
-		86C6A28D24E37C37002C26F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		86C6A28E24E37C37002C26F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		86C6A29124E37C37002C26F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86C6A29324E37C38002C26F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86C6A29624E37C38002C26F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -630,6 +645,9 @@
 		8602B85F2507A15E0048445C /* ViewContoller */ = {
 			isa = PBXGroup;
 			children = (
+				8692C7EE2508EB69003E2434 /* 48791.jpg */,
+				8692C7ED2508EB68003E2434 /* 81239.jpg */,
+				8692C7EC2508EB68003E2434 /* 128915.jpg */,
 				8602B8672507A17A0048445C /* DKHomeViewController.h */,
 				8602B8682507A17A0048445C /* DKHomeViewController.m */,
 			);
@@ -646,6 +664,14 @@
 		8602B8612507A15E0048445C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8692C7E62508E5E2003E2434 /* ZFJRollView.h */,
+				8692C7E72508E5E2003E2434 /* ZFJRollView.m */,
+				8692C7E02508DA6B003E2434 /* DKHomeCollectionViewCell.h */,
+				8692C7E12508DA6B003E2434 /* DKHomeCollectionViewCell.m */,
+				8692C7E32508DC33003E2434 /* DKHomeCollectionHeaderView.h */,
+				8692C7E42508DC33003E2434 /* DKHomeCollectionHeaderView.m */,
+				8692C7E92508E5FC003E2434 /* DKHomeCollectionFooterView.h */,
+				8692C7EA2508E5FC003E2434 /* DKHomeCollectionFooterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1390,8 +1416,6 @@
 				86C6A28824E37C37002C26F8 /* DKAppDelegate.m */,
 				86C6A28A24E37C37002C26F8 /* DKSceneDelegate.h */,
 				86C6A28B24E37C37002C26F8 /* DKSceneDelegate.m */,
-				86C6A28D24E37C37002C26F8 /* ViewController.h */,
-				86C6A28E24E37C37002C26F8 /* ViewController.m */,
 				86C6A29024E37C37002C26F8 /* Main.storyboard */,
 				86C6A29324E37C38002C26F8 /* Assets.xcassets */,
 				86C6A29524E37C38002C26F8 /* LaunchScreen.storyboard */,
@@ -1538,10 +1562,13 @@
 				86C6A29724E37C38002C26F8 /* LaunchScreen.storyboard in Resources */,
 				869CDA7324F756AD0094D034 /* Images.xcassets in Resources */,
 				864E34CA24EA6BFD005F7583 /* BRPickerView.bundle in Resources */,
+				8692C7F02508EB69003E2434 /* 81239.jpg in Resources */,
 				864E34EF24EA6BFD005F7583 /* NetworkImage.xcassets in Resources */,
 				864E338C24EA1BFF005F7583 /* Localizable.strings in Resources */,
+				8692C7F12508EB69003E2434 /* 48791.jpg in Resources */,
 				864E34E424EA6BFD005F7583 /* ErrorHintImage.xcassets in Resources */,
 				86C6A29424E37C38002C26F8 /* Assets.xcassets in Resources */,
+				8692C7EF2508EB69003E2434 /* 128915.jpg in Resources */,
 				864E34C224EA6BFD005F7583 /* Images.xcassets in Resources */,
 				86C6A29224E37C37002C26F8 /* Main.storyboard in Resources */,
 				864E339224EA64F8005F7583 /* InfoPlist.strings in Resources */,
@@ -1618,11 +1645,11 @@
 				864E34F524EA6BFD005F7583 /* XHWebImageAutoSize.m in Sources */,
 				864E34DA24EA6BFD005F7583 /* EasyAlertGlobalConfig.m in Sources */,
 				864E34ED24EA6BFD005F7583 /* SGPageTitleViewConfigure.m in Sources */,
-				86C6A28F24E37C37002C26F8 /* ViewController.m in Sources */,
 				864E350224EA6BFD005F7583 /* YYMemoryCache.m in Sources */,
 				864E350A24EA6BFD005F7583 /* UIColor+JM.m in Sources */,
 				864E34C624EA6BFD005F7583 /* NSDate+BRPickerView.m in Sources */,
 				864E34C324EA6BFD005F7583 /* DKWKWebViewBsseViewController.m in Sources */,
+				8692C7EB2508E5FC003E2434 /* DKHomeCollectionFooterView.m in Sources */,
 				869CDA7C24F75AD40094D034 /* DKRegisterMobileV.m in Sources */,
 				864E34E724EA6BFD005F7583 /* DDQFoundationModel.m in Sources */,
 				864E34F324EA6BFD005F7583 /* UITableView+XHWebImageAutoSize.m in Sources */,
@@ -1674,6 +1701,7 @@
 				864E34A824EA6BFD005F7583 /* UIView+YYAdd.m in Sources */,
 				864E34CE24EA6BFD005F7583 /* EasyTextGlobalConfig.m in Sources */,
 				864E34D524EA6BFD005F7583 /* EasyEmptyTypes.m in Sources */,
+				8692C7E52508DC33003E2434 /* DKHomeCollectionHeaderView.m in Sources */,
 				864E34BB24EA6BFD005F7583 /* DKTagView.m in Sources */,
 				864E34F424EA6BFD005F7583 /* XHWebImageAutoSizeConst.m in Sources */,
 				8602B8692507A17A0048445C /* DKHomeViewController.m in Sources */,
@@ -1681,6 +1709,7 @@
 				864E34D824EA6BFD005F7583 /* EasyAlertView.m in Sources */,
 				864E350B24EA6BFD005F7583 /* JMTabBar.m in Sources */,
 				864E34BA24EA6BFD005F7583 /* UIViewController+PopoutProcess.m in Sources */,
+				8692C7E82508E5E2003E2434 /* ZFJRollView.m in Sources */,
 				86C6A29A24E37C38002C26F8 /* main.m in Sources */,
 				864E34B824EA6BFD005F7583 /* WSLWaterFlowLayout.m in Sources */,
 				86B9D92924F9E83A00113CE7 /* DKRegisterStep2ViewController.m in Sources */,
@@ -1704,6 +1733,7 @@
 				864E34B024EA6BFD005F7583 /* NSString+AttributedString.m in Sources */,
 				8646CD2224F896E2000CCFC7 /* DKDropBtn.m in Sources */,
 				864E34DE24EA6BFD005F7583 /* UIView+EasyShowExt.m in Sources */,
+				8692C7E22508DA6B003E2434 /* DKHomeCollectionViewCell.m in Sources */,
 				864E34BD24EA6BFD005F7583 /* UITextView+WZB.m in Sources */,
 				864E351B24EA6D9A005F7583 /* DKUserInfo.m in Sources */,
 				864E351A24EA6D9A005F7583 /* DKLoginViewController.m in Sources */,
