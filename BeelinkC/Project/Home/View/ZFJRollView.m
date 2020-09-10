@@ -59,9 +59,10 @@
         }
         UIView *bgView = [[UIView alloc] init];
 //        KRadius(bgView, kWidth_fact(23));
-        kRedius_Space(bgView, kWidth_fact(23), CGSizeMake(0.1, 0.1), 0.2, kColor_hex(@"ffffff"));
+        kRedius_Space(bgView, kWidth_fact(23), CGSizeMake(0.2, 0.2), 0.2, color_gray8);
+//        bgView.clipsToBounds = YES;
         bgView.frame = CGRectMake((2 * i + 1) * self.halfGap + i * (self.scrollView.frame.size.width - 2 * self.halfGap), 0, (self.scrollView.frame.size.width - 2 * self.halfGap), self.frame.size.height);
-        bgView.backgroundColor = [UIColor redColor];
+        bgView.backgroundColor = color_white10;
         [self.scrollView addSubview:bgView];
         
         UIImageView *picImageView = [[UIImageView alloc] init];
@@ -84,6 +85,12 @@
          */
         
         picImageView.frame = CGRectMake(0, 0, bgView.width, kWidth_fact(178));
+        
+        UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:picImageView.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(kWidth_fact(23), kWidth_fact(23))];
+        CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+        maskLayer.frame = picImageView.bounds;
+        maskLayer.path = maskPath.CGPath;
+        picImageView.layer.mask = maskLayer;
         //设置图片
         if (i == 0) {
             picImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", self.rollDataArr[self.rollDataArr.count - 1]]];

@@ -19,7 +19,7 @@
 + (instancetype)headerViewWithCollectionView:(UICollectionView *)collectionView forIndexPath:(NSIndexPath *)indexPath{
     //从缓存池中寻找顶部视图对象，如果没有，该方法自动调用alloc/initWithFrame创建一个新的顶部视图返回
     DKHomeCollectionHeaderView *headerView=[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:[DKHomeCollectionHeaderView headerViewIdentifier] forIndexPath:indexPath];
-    headerView.backgroundColor = [UIColor redColor];
+    headerView.backgroundColor = color_white10;
     return headerView;
     
 }
@@ -27,17 +27,22 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     self=[super initWithFrame:frame];
     if (self) {
+        UIImageView *iconImageV = [[UIImageView alloc] init];
+        iconImageV.image = KImage(@"home_group_icon");
+        [self addSubview:iconImageV];
+        [iconImageV mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.offset(kWidth_fact(15));
+            make.centerY.equalTo(self.mas_centerY);
+        }];
+        
         UILabel *textLabel=[[UILabel alloc]init];
-        CGFloat x=5;
-        CGFloat y=5;
-        CGFloat width=frame.size.width-10;
-        CGFloat height=frame.size.height-10;
-        textLabel.frame=CGRectMake(x, y, width, height);
-        textLabel.numberOfLines=0;
-//        textLabel.textAlignment=NSTextAlignmentCenter;
-        textLabel.font=[UIFont systemFontOfSize:15];
-        textLabel.textColor=[UIColor blackColor];
+        textLabel.font = KF_BH_F(16);
+        textLabel.textColor = color_black8;
         [self addSubview:textLabel];
+        [textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(iconImageV.mas_right).offset(kWidth_fact(5));
+            make.centerY.equalTo(iconImageV.mas_centerY);
+        }];
         self.textLabel=textLabel;
     }
     return self;

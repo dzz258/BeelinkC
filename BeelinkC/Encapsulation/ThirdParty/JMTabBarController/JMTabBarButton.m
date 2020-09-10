@@ -41,6 +41,7 @@
         [self addSubview:self.shield_Bg_V];
         
         self.imageView = [[UIImageView alloc] init];
+        self.imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self addSubview:self.imageView];
 
         self.backgroundColor=[UIColor clearColor];
@@ -77,6 +78,7 @@
         if ([[JMConfig config] typeLayout] == JMConfigTypeLayoutImage) {
             imageY = self.height * 0.5 - imageSize.height * 0.5;
         }
+//        self.imageView.backgroundColor = [UIColor redColor];
         self.imageView.frame = CGRectMake(iamgeX, imageY, imageSize.width, imageSize.height);
     }
     CGFloat titleX = 4;

@@ -113,7 +113,7 @@
 -(UICollectionView *)collevtionview{
     if (!_collevtionview) {
         _collevtionview=[[UICollectionView alloc]initWithFrame:CGRectMake(0,0, KScreen_Width, 0) collectionViewLayout:self.flowLayout];
-//        _collevtionview.backgroundColor= color_view_bg;
+        _collevtionview.backgroundColor= color_white10;
         _collevtionview.showsVerticalScrollIndicator=NO;
         _collevtionview.showsHorizontalScrollIndicator=NO;
         _collevtionview.dataSource = self;
@@ -184,7 +184,7 @@
         DKHomeCollectionHeaderView *headerView=[DKHomeCollectionHeaderView headerViewWithCollectionView:collectionView forIndexPath:indexPath];
         //设置顶部视图属性
 //        headerView.backgroundColor = [UIColor whiteColor];
-        headerView.textLabel.text = [NSString stringWithFormat:@"-Header-%ld-",indexPath.section];
+        headerView.textLabel.text = @"热门视频";
         return headerView;
     }else if ([kind isEqualToString:UICollectionElementKindSectionFooter]){
         //获取底部视图

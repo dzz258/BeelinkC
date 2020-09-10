@@ -39,6 +39,8 @@
 /** 大按钮index */
 @property (nonatomic, assign) NSInteger bigTag;
 
+@property (nonatomic, strong) UIView *btnBgV;
+
 @property (nonatomic, strong) UIImageView *btnBgImageV;
 
 @end
@@ -72,10 +74,22 @@
     }
     return _saveTabBarArrM;
 }
+-(UIView *)btnBgV{
+    if (!_btnBgV) {
+           _btnBgV = [[UIView alloc] init];
+        _btnBgV.backgroundColor = color_white10;
+        KRadius(_btnBgV, 22.5);
+//        kRedius_Space(_btnBgV, 22.5, CGSizeMake(0.1, 0.1), 0.2, color_cyan9);
+           _btnBgV.frame = CGRectMake(0,0, 45, 45);
+        [_btnBgV addSubview:self.btnBgImageV];
+        }
+        return _btnBgV;
+}
 -(UIImageView *)btnBgImageV{
     if (!_btnBgImageV) {
        _btnBgImageV = [[UIImageView alloc] init];
-       _btnBgImageV.frame = CGRectMake(0,self.height-64, 64, 64);
+//        _btnBgImageV.backgroundColor = [UIColor redColor];
+        _btnBgImageV.frame = CGRectMake(2.5,4, 40, 37);
     }
     return _btnBgImageV;
 }
@@ -130,7 +144,7 @@
     if (self = [super initWithFrame:frame]) {
         self.bigTag = -1;
         
-         [self addSubview:self.btnBgImageV];
+         [self addSubview:self.btnBgV];
         
         kRedius_Space(self, 0, CGSizeMake(1, 1), 0.2, kColor_hex(@"#9C99A8"));
 //        NSArray *imageSelectedArr = @[@"tabbar_icon_1_select",@"tabbar_icon_2_select",@"tabbar_icon_3_select",@"tabbar_icon_4_select"];
@@ -218,11 +232,11 @@
 - (void)setSelectedIndex:(NSInteger)selectedIndex {
     _selectedIndex = selectedIndex;
     
-    NSArray *imageSelectedArr = @[@"tabbar_icon_3_select",@"tabbar_icon_2_select",@"tabbar_icon_1_select",@"tabbar_icon_4_select"];
+//    NSArray *imageSelectedArr = @[@"tabbar_icon_3_select",@"tabbar_icon_2_select",@"tabbar_icon_1_select",@"tabbar_icon_4_select"];
     
-    self.btnBgImageV.image = KImage(imageSelectedArr[selectedIndex]);
-    self.btnBgImageV.centerX = selectedIndex*KScreen_Width/imageSelectedArr.count+KScreen_Width/imageSelectedArr.count*0.5;
-//    self.btnBgImageV.centerY = 5;
+    self.btnBgImageV.image = KImage(@"tabar_select");
+    self.btnBgV.centerX = selectedIndex*KScreen_Width/5+KScreen_Width/5*0.5;
+    self.btnBgV.centerY = 7;
 
     [self setUpSelectedIndex:selectedIndex];
 }

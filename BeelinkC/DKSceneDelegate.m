@@ -62,10 +62,10 @@
         /*********创建跟试图控制器*********/
         
         //初始化标题数组, 未选择图片数组, 选择图片数组, 控制器数组
-        NSArray *titleArr = @[@"大领读",@"书城",@"书架",@"我的"];
-        NSArray *imageNormalArr = @[@"tabbar_icon_3",@"tabbar_icon_2",@"tabbar_icon_1",@"tabbar_icon_4"];
+        NSArray *titleArr = @[@"首页",@"直播",@"视频",@"订阅",@"我的"];
+        NSArray *imageNormalArr = @[@"tabar_icon_home",@"tabar_icon_live",@"tabar_icon_video",@"tabar_icon_subscribe",@"tabar_icon_mine"];
         
-        NSArray *imageSelectedArr = @[@"",@"",@"",@""];
+        NSArray *imageSelectedArr = @[@"",@"",@"",@"",@""];
         
 
         //        NSArray *imageSelectedArr = @[@"tabbar_icon_1_select",@"tabbar_icon_2_select",@"tabbar_icon_3_select",@"tabbar_icon_4_select"];
@@ -87,11 +87,15 @@
 //        chatterBoxVC.navigationItem.title = @"话匣子";
 //        chatterBoxVC.isHideNav = YES;
         
-        DKSubscribeViewController *myVC = [[DKSubscribeViewController alloc] init];
+        DKSubscribeViewController *subscribeVC = [[DKSubscribeViewController alloc] init];
+        subscribeVC.navigationItem.title = @"我的";
+        subscribeVC.isHideNav = YES;
+        
+        DKMineViewController *myVC = [[DKMineViewController alloc] init];
         myVC.navigationItem.title = @"我的";
         myVC.isHideNav = YES;
         
-        NSArray *array=@[leadReadVC,homeVC,bookrackVC,myVC];
+        NSArray *array=@[leadReadVC,homeVC,bookrackVC,subscribeVC,myVC];
         
         for (int i = 0; i < titleArr.count; i++) {
             [controllersArr addObject:[[DKBaseNavigationViewController alloc] initWithRootViewController:array[i]]];
@@ -101,12 +105,14 @@
         config.tabBarAnimType=JMConfigTabBarAnimTypeBoundsMax;
         config.isClearTabBarTopLine=NO;
         config.titleOffset = 5;
+        config.imageOffset = 5;
+        config.imageSize = CGSizeMake(23, 23);
         config.tabBarTopLineColor=[UIColor clearColor];
-        config.norTitleColor = kColor_hex(@"#666666");
-        config.selTitleColor= kColor_hex(@"#000000");
+        config.norTitleColor = color_gray6;
+        config.selTitleColor= color_cyan9;
         //        JMTabBarController *tabBarVc = [[JMTabBarController alloc] initWithTabBarControllers:controllersArr NorImageArr:imageNormalArr SelImageArr:imageSelectedArr TitleArr:titleArr Config:config andTag:1];
         JMTabBarController *tabBarVc = [[JMTabBarController alloc] initWithTabBarControllers:controllersArr NorImageArr:imageNormalArr SelImageArr:imageSelectedArr TitleArr:titleArr Config:config];
-//        tabBarVc.selectedIndex = 1;
+        tabBarVc.selectedIndex = 0;
         self.window.rootViewController = tabBarVc;
         
 //        LZTabBarVC *tbc = [[LZTabBarVC alloc] init];
