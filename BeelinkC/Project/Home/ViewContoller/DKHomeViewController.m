@@ -11,7 +11,7 @@
 #import "DKHomeCollectionViewCell.h"
 #import "DKHomeCollectionHeaderView.h"
 #import "DKHomeCollectionFooterView.h"
-
+#import "DKSearchViewController.h"
 
 @interface DKHomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,WSLWaterFlowLayoutDelegate,ZFJRollViewDelegate>
 @property (nonatomic, strong) UICollectionView *collevtionview;
@@ -25,6 +25,7 @@
     // Do any additional setup after loading the view.
 }
 -(void)_addSubviews{
+    [self addNavView];
     [self.view addSubview:self.collevtionview];
     [self.collevtionview mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.offset(0);
@@ -35,27 +36,27 @@
     [self.flowLayout.collectionView  reloadData];
 }
 -(void)addNavView{
-//    UIView *nav_view = [[UIView alloc] init];
-//    nav_view.backgroundColor = color_main_red;
-//    [self.view addSubview:nav_view];
-//
-//    [nav_view mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.equalTo(@0);
-//        make.top.equalTo(@0);
-//        make.right.equalTo(self.view.mas_right);
-//        make.height.equalTo(@(kTopHeight));
-//    }];
-//
-//    UIImageView *iconImageV = [[UIImageView alloc] init];
-//    iconImageV.image = KImage(@"home_icon");
-//    [nav_view addSubview:iconImageV];
-//    [iconImageV mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.equalTo(@kWidth_fact(14));
-//        make.top.equalTo(@(kStatuHeight+10));
-//        make.width.equalTo(@33);
-//        make.height.equalTo(@25);
-//    }];
-//
+    UIView *nav_view = [[UIView alloc] init];
+    nav_view.backgroundColor = color_white10;
+    [self.view addSubview:nav_view];
+
+    [nav_view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(@0);
+        make.top.equalTo(@0);
+        make.right.equalTo(self.view.mas_right);
+        make.height.equalTo(@(kTopHeight));
+    }];
+
+    UIImageView *iconImageV = [[UIImageView alloc] init];
+    iconImageV.backgroundColor = [UIColor redColor];
+    iconImageV.image = KImage(@"home_icon");
+    [nav_view addSubview:iconImageV];
+    [iconImageV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.offset(kWidth_fact(15));
+        make.top.equalTo(@(kStatuHeight+7));
+        make.width.height.offset(30);
+    }];
+
 //    UILabel *titleL = [[UILabel alloc] init];
 //    titleL.text = @"量大使";
 //    titleL.font = KF_H_F(15);
@@ -65,42 +66,54 @@
 //        make.left.equalTo(iconImageV.mas_right).offset(kWidth_fact(6));
 //        make.centerY.equalTo(iconImageV.mas_centerY);
 //    }];
-//
-//    UIButton *searchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    KRadius(searchBtn, 13);
-//    searchBtn.backgroundColor = color_search_bg;
-//    [searchBtn addTarget:self action:@selector(searchVC) forControlEvents:UIControlEventTouchUpInside];
-//    [nav_view addSubview:searchBtn];
-//    [searchBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.equalTo(@kWidth_fact(110));
-//        make.centerY.equalTo(iconImageV.mas_centerY);
-//        make.right.equalTo(self.view.mas_right).offset(-kWidth_fact(15));
-//        make.height.equalTo(@25);
-//    }];
-//
-//    UIImageView *searchIconImageV = [[UIImageView alloc] init];
-//    searchIconImageV.image = KImage(@"home_search");
-//    [searchBtn addSubview:searchIconImageV];
-//    [searchIconImageV mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.equalTo(@kWidth_fact(13));
-//        make.centerY.equalTo(searchBtn.mas_centerY);
-//        make.width.height.equalTo(@12);
-//    }];
-//
-//    UILabel *searchL = [[UILabel alloc] init];
-//    searchL.text = @"搜索商品，开启您的智慧生活";
-//    searchL.font = KF_H_F(12);
-//    searchL.textColor = color_search_text_;
-//    [searchBtn addSubview:searchL];
-//    [searchL mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.equalTo(searchIconImageV.mas_right).offset(kWidth_fact(5));
-//        make.centerY.equalTo(searchBtn.mas_centerY);
-//    }];
+
+    UIButton *searchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    KRadius(searchBtn, 13);
+    searchBtn.backgroundColor = color_n_gray67;
+    [searchBtn addTarget:self action:@selector(searchVC) forControlEvents:UIControlEventTouchUpInside];
+    [nav_view addSubview:searchBtn];
+    
+
+    UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    rightBtn.backgroundColor = [UIColor redColor];
+    [nav_view addSubview:rightBtn];
+    
+    [searchBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(iconImageV.mas_right).offset(kWidth_fact(15));
+        make.centerY.equalTo(iconImageV.mas_centerY);
+        make.right.equalTo(rightBtn.mas_left).offset(kWidth_fact(-15));
+        make.height.equalTo(@25);
+    }];
+    
+    [rightBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.offset(kWidth_fact(-15));
+        make.centerY.equalTo(iconImageV.mas_centerY);
+        make.width.height.offset(17);
+    }];
+    
+    UIImageView *searchIconImageV = [[UIImageView alloc] init];
+    searchIconImageV.image = KImage(@"home_seek_icon");
+    [searchBtn addSubview:searchIconImageV];
+    [searchIconImageV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.offset(kWidth_fact(10));
+        make.centerY.equalTo(searchBtn.mas_centerY);
+        make.width.height.equalTo(@11);
+    }];
+
+    UILabel *searchL = [[UILabel alloc] init];
+    searchL.text = @"输入关键字搜索视频";
+    searchL.font = KF_H_F(12);
+    searchL.textColor = color_n_gray8;
+    [searchBtn addSubview:searchL];
+    [searchL mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(searchIconImageV.mas_right).offset(kWidth_fact(10));
+        make.centerY.equalTo(searchBtn.mas_centerY);
+    }];
 }
 -(void)searchVC{
-//    DKSearchViewController *productListVC = [[DKSearchViewController alloc] init];
-//    productListVC.isHideNav = YES;
-//    [self.navigationController pushViewController:productListVC animated:YES];
+    DKSearchViewController *productListVC = [[DKSearchViewController alloc] init];
+    productListVC.isHideNav = YES;
+    [self.navigationController pushViewController:productListVC animated:YES];
 }
 -(WSLWaterFlowLayout *)flowLayout{
     if (!_flowLayout) {

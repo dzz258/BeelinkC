@@ -43,7 +43,6 @@
 #define kColor_hex_alpha(HexColor,Alpha) [UIColor colorWithHexString:HexColor alpha:Alpha]
 ///自定义十六进制颜色  适配暗黑模式   lightColor：白天模式颜色  darkColor：暗黑模式颜色（使用需要有Color+HEX的扩展）
 #define kColor(lightColor,darkColor) [UIColor colorWithLightColorStr:lightColor DarkColor:darkColor]
-
 // rgb颜色转换（16进制->10进制）
 #define kColor_rgb16(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 //随机色

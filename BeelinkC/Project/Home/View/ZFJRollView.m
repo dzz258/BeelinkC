@@ -77,7 +77,7 @@
         
         UIView *bgView = [[UIView alloc] init];
 //        KRadius(bgView, kWidth_fact(23));
-        kRedius_Space(bgView, kWidth_fact(23), CGSizeMake(0.2, 0.2), 0.2, color_gray8);
+        kRedius_Space(bgView, kWidth_fact(23), CGSizeMake(0.2, 0.2), 0.2, color_black8);
 //        bgView.clipsToBounds = YES;
         bgView.frame = CGRectMake((2 * i + 1) * self.halfGap + i * (self.scrollView.frame.size.width - 2 * self.halfGap), 0, (self.scrollView.frame.size.width - 2 * self.halfGap), self.frame.size.height);
         bgView.backgroundColor = color_white10;
@@ -103,7 +103,7 @@
         [bgView addSubview:picImageView];
         
         UIView *titleBgV = [[UIView alloc] init];
-        titleBgV.backgroundColor = kColor_hex_alpha(@"#000000", 0.5);
+        titleBgV.backgroundColor = color_alpha_black5;//kColor_hex_alpha(@"#000000", 0.5);
         [picImageView addSubview:titleBgV];
         [titleBgV mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.top.right.offset(0);
@@ -152,6 +152,14 @@
             make.left.top.right.bottom.offset(0);
         }];
         
+        UIButton *playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [playBtn setImage:KImage(@"home_play") forState:UIControlStateNormal];
+        [picImageView addSubview:playBtn];
+        [playBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.offset(kWidth_fact(84));
+            make.centerX.equalTo(picImageView.mas_centerX);
+        }];
+        
         UIButton *headerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         headerBtn.backgroundColor = [UIColor redColor];
         kRadius_WC(headerBtn, kWidth_fact(25), kWidth_fact(2), color_white10);
@@ -160,6 +168,27 @@
             make.left.offset(kWidth_fact(10));
             make.centerY.equalTo(picImageView.mas_bottom);
             make.width.height.offset(kWidth_fact(50));
+        }];
+        
+        UIButton *appointmentBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        appointmentBtn.frame = CGRectMake(0, 0, kWidth_fact(80), kWidth_fact(27));
+        appointmentBtn.backgroundColor = color_cyan9;
+        appointmentBtn.titleLabel.font = KF_H_F(11);
+        [appointmentBtn setTitleColor:color_white10 forState:UIControlStateNormal];
+        [appointmentBtn setTitle:@"＋立即预约" forState:UIControlStateNormal];
+        [picImageView addSubview:appointmentBtn];
+        
+        UIBezierPath *appointmentMaskPath = [UIBezierPath bezierPathWithRoundedRect:appointmentBtn.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerBottomLeft cornerRadii:CGSizeMake(kWidth_fact(23), kWidth_fact(23))];
+        CAShapeLayer *appointmentMaskLayer = [[CAShapeLayer alloc] init];
+        appointmentMaskLayer.frame = appointmentBtn.bounds;
+        appointmentMaskLayer.path = appointmentMaskPath.CGPath;
+        appointmentBtn.layer.mask = appointmentMaskLayer;
+        
+        [appointmentBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.equalTo(picImageView.mas_bottom);
+            make.right.equalTo(picImageView.mas_right);
+            make.width.offset(kWidth_fact(80));
+            make.height.offset(kWidth_fact(27));
         }];
         
         UILabel *scoreL = [self addLabelText:@"4.6分" font:KF_BH_F(11) textC:color_orange8];
@@ -226,7 +255,7 @@
             make.width.lessThanOrEqualTo(@kWidth_fact(100));
         }];
         
-        UILabel *timeL = [self addLabelText:@"开播：08月01日  20:00" font:KF_H_F(11) textC:color_gray6];
+        UILabel *timeL = [self addLabelText:@"开播：08月01日 20:00" font:KF_H_F(11) textC:color_gray6];
         [bgView addSubview:timeL];
         [timeL mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.equalTo(shareBtn.mas_right);
@@ -258,12 +287,13 @@
 
 #pragma mark - 轻拍手势的方法
 - (void)tapAction:(UITapGestureRecognizer *)tap{
-    if ([self.rollDataArr isKindOfClass:[NSArray class]] && (self.rollDataArr.count > 0)) {
-        [_delegate didSelectPicWithIndexPath:(self.scrollView.contentOffset.x / self.scrollView.frame.size.width)];
-    }else{
-        [_delegate didSelectPicWithIndexPath:-1];
+    if ([self.delegate respondsToSelector:@selector(didSelectPicWithIndexPath:)]) {
+        if ([self.rollDataArr isKindOfClass:[NSArray class]] && (self.rollDataArr.count > 0)) {
+            [_delegate didSelectPicWithIndexPath:(self.scrollView.contentOffset.x / self.scrollView.frame.size.width)];
+        }else{
+            [_delegate didSelectPicWithIndexPath:-1];
+        }
     }
-    
 }
 
 /*

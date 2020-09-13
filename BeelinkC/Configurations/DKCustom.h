@@ -28,15 +28,19 @@ static int DebugEnvironment = 0;  // 1、调试 部分按钮跳过  0 正式使�
 #define color_white10 kColor(@"#ffffff",@"#000000")
 #define color_cyan9 kColor(@"#0dbba4", @"")
 
+#define color_gray3 kColor(@"#f7f7f7",@"#ffffff")
 #define color_gray6 kColor(@"#666666",@"#ffffff")
-#define color_gray7 kColor(@"#eeeeee", @"")
+#define color_n_gray67 kColor(@"#e5e5e5", @"")
+#define color_n_gray7 kColor(@"#eeeeee", @"")
 #define color_gray8 kColor(@"#999999",@"#ffffff")
+#define color_n_gray8 kColor(@"#999999",@"")
 
 //橘色
 #define color_orange3 kColor(@"#fcf1ed",@"#fcf1ed")
 #define color_orange8 kColor(@"#ed7145",@"#ed7145")
 
-
+//透明色  黑色
+#define color_alpha_black5 [UIColor colorWithLightColor:@"#000000" lightCAlpha:0.5 darkColor:@"#ffffff" darkCAlpha:0.5]
 ////红色
 //#define color_main_red kColor_hex(@"#b73527")
 ////橘色

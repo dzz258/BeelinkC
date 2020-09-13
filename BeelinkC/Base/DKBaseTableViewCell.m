@@ -14,7 +14,7 @@
     DKBaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self cellIdentifier]];
     if (!cell) {
         cell = [[self alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:[self cellIdentifier]];
-        cell.backgroundColor=[UIColor whiteColor];
+        cell.backgroundColor=color_white10;
 //        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.selectedBackgroundView = [UIView new];
         cell.selectedBackgroundView.backgroundColor = kColor_hex(@"#E6FCFA");
@@ -55,7 +55,7 @@
 -(UIView *)cellCut_offRule{
     if (!_cellCut_offRule) {
         _cellCut_offRule = [[UIView alloc] init];
-        _cellCut_offRule.backgroundColor = kColor_hex(@"#f0f0f0");
+        _cellCut_offRule.backgroundColor = color_gray3;
         _cellCut_offRule.hidden = YES;
     }
     return _cellCut_offRule;

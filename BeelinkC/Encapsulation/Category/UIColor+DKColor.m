@@ -94,7 +94,7 @@
 /// @param lightAlpha 普通模式颜色透明度
 /// @param darkColor 暗黑模式颜色透明度
 /// @param darkAlpha 暗黑模式颜色
-+ (UIColor *)colorWithLightColorStr:(NSString *)lightColor WithLightColorAlpha:(CGFloat)lightAlpha DarkColor:(NSString *)darkColor WithDarkColorAlpha:(CGFloat)darkAlpha{
++ (UIColor *)colorWithLightColor:(NSString *)lightColor lightCAlpha:(CGFloat)lightAlpha darkColor:(NSString *)darkColor darkCAlpha:(CGFloat)darkAlpha{
     return [UIColor colorWithLightColor:[UIColor colorWithHexString:lightColor alpha:lightAlpha] DarkColor:[UIColor colorWithHexString:darkColor alpha:darkAlpha]];
 }
 //绘制渐变色颜色的方法 shade

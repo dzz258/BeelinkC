@@ -203,7 +203,7 @@
             }];
             
             UIView *horizontalV = [[UIView alloc] init];
-            horizontalV.backgroundColor = color_gray7;
+            horizontalV.backgroundColor = color_n_gray7;
             [inputV addSubview:horizontalV];
             [horizontalV mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.left.right.offset(0);
@@ -358,7 +358,7 @@
         _birthdayV = [[UIView alloc] init];
         
         UIView *horizontalV = [[UIView alloc] init];
-        horizontalV.backgroundColor = color_gray7;
+        horizontalV.backgroundColor = color_n_gray7;
         [_birthdayV addSubview:horizontalV];
         [horizontalV mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.offset(0);

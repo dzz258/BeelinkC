@@ -104,9 +104,10 @@
         JMConfig *config = [JMConfig config];
         config.tabBarAnimType=JMConfigTabBarAnimTypeBoundsMax;
         config.isClearTabBarTopLine=NO;
+        config.tabBarBackground = color_white10;
         config.titleOffset = 5;
         config.imageOffset = 5;
-        config.imageSize = CGSizeMake(23, 23);
+        config.imageSize = CGSizeMake(16, 16);
         config.tabBarTopLineColor=[UIColor clearColor];
         config.norTitleColor = color_gray6;
         config.selTitleColor= color_cyan9;
