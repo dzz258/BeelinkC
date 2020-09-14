@@ -7,8 +7,9 @@
 //
 
 #import "DKLiveListVC.h"
+#import "DKLiveTableViewCell.h"
 
-@interface DKLiveListVC ()
+@interface DKLiveListVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
 
@@ -18,7 +19,36 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-
+-(void)_addSubviews{
+    self.superTableV.delegate = self;
+    self.superTableV.dataSource = self;
+    [self.view addSubview:self.superTableV];
+    
+    [self.superTableV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.offset(0);
+        make.top.offset(0);
+        make.right.equalTo(self.view.mas_right);
+        make.height.offset(self.vHeight);
+    }];
+}
+#pragma mark - UITableViewDelegate
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return kWidth_fact(276);
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    kWeakSelf(self);
+    DKLiveTableViewCell *cell = [DKLiveTableViewCell cellFromTableView:tableView];
+    return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 /*
 #pragma mark - Navigation
 

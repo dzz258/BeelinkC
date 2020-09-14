@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "DXShareModel.h"
-#import "NSObject+YJNetRequest.h"
 
 typedef NS_ENUM(NSUInteger , DXShareType) {
     DXShareTypeWechatSession    = 1,               //微信好友

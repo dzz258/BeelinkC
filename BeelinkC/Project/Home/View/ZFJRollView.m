@@ -247,7 +247,7 @@
             make.width.height.offset(kWidth_fact(16));
         }];
         
-        UILabel *languageL = [self addLabelText:@"授课语言：西班牙" font:KF_H_F(11) textC:color_gray6];
+        UILabel *languageL = [self addLabelText:@"授课语言：西班牙西班牙西班牙" font:KF_H_F(11) textC:color_gray6];
         [bgView addSubview:languageL];
         [languageL mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(teacherL.mas_left);
@@ -255,12 +255,12 @@
             make.width.lessThanOrEqualTo(@kWidth_fact(100));
         }];
         
-        UILabel *timeL = [self addLabelText:@"开播：08月01日 20:00" font:KF_H_F(11) textC:color_gray6];
+        UILabel *timeL = [self addLabelText:@"开播:08月01日 20:00" font:KF_H_F(11) textC:color_gray6];
         [bgView addSubview:timeL];
         [timeL mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.equalTo(shareBtn.mas_right);
             make.centerY.equalTo(languageL.mas_centerY);
-            make.width.lessThanOrEqualTo(@kWidth_fact(120));
+            make.width.lessThanOrEqualTo(@kWidth_fact(125));
         }];
     }
     //设置轮播图当前的显示区域

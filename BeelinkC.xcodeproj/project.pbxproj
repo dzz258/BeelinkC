@@ -13,6 +13,9 @@
 		8602B86F2507A1B70048445C /* DKMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8602B86E2507A1B70048445C /* DKMineViewController.m */; };
 		8602B8722507A1DC0048445C /* DKSubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8602B8712507A1DC0048445C /* DKSubscribeViewController.m */; };
 		8602B8752507A1E80048445C /* DKVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8602B8742507A1E80048445C /* DKVideoViewController.m */; };
+		863DF3CA250F192700F58FAE /* DKLiveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 863DF3C9250F192700F58FAE /* DKLiveTableViewCell.m */; };
+		863DF3CE250F4CC800F58FAE /* DKShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 863DF3CD250F4CC800F58FAE /* DKShareModel.m */; };
+		863DF3D1250F6DF800F58FAE /* DKShareV.m in Sources */ = {isa = PBXBuildFile; fileRef = 863DF3D0250F6DF800F58FAE /* DKShareV.m */; };
 		8646CD2224F896E2000CCFC7 /* DKDropBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646CD2124F896E2000CCFC7 /* DKDropBtn.m */; };
 		8646CD2524F8AF6A000CCFC7 /* DKCountDownBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646CD2424F8AF6A000CCFC7 /* DKCountDownBtn.m */; };
 		864E338C24EA1BFF005F7583 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 864E338E24EA1BFF005F7583 /* Localizable.strings */; };
@@ -30,7 +33,6 @@
 		864E34AB24EA6BFD005F7583 /* NSObject+CommonLogicDispose.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E33B724EA6BFD005F7583 /* NSObject+CommonLogicDispose.m */; };
 		864E34AC24EA6BFD005F7583 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E33B924EA6BFD005F7583 /* UIImage+Extension.m */; };
 		864E34AD24EA6BFD005F7583 /* NSString+JLHDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E33BB24EA6BFD005F7583 /* NSString+JLHDate.m */; };
-		864E34AE24EA6BFD005F7583 /* NSObject+YJNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E33BC24EA6BFD005F7583 /* NSObject+YJNetRequest.m */; };
 		864E34B024EA6BFD005F7583 /* NSString+AttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E33BF24EA6BFD005F7583 /* NSString+AttributedString.m */; };
 		864E34B224EA6BFD005F7583 /* DKNoneDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E33C224EA6BFD005F7583 /* DKNoneDataView.m */; };
 		864E34B324EA6BFD005F7583 /* UITableView+DKNoneData.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E33C324EA6BFD005F7583 /* UITableView+DKNoneData.m */; };
@@ -191,6 +193,12 @@
 		8602B8712507A1DC0048445C /* DKSubscribeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSubscribeViewController.m; sourceTree = "<group>"; };
 		8602B8732507A1E80048445C /* DKVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKVideoViewController.h; sourceTree = "<group>"; };
 		8602B8742507A1E80048445C /* DKVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKVideoViewController.m; sourceTree = "<group>"; };
+		863DF3C8250F192700F58FAE /* DKLiveTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKLiveTableViewCell.h; sourceTree = "<group>"; };
+		863DF3C9250F192700F58FAE /* DKLiveTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKLiveTableViewCell.m; sourceTree = "<group>"; };
+		863DF3CC250F4CC800F58FAE /* DKShareModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKShareModel.h; sourceTree = "<group>"; };
+		863DF3CD250F4CC800F58FAE /* DKShareModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKShareModel.m; sourceTree = "<group>"; };
+		863DF3CF250F6DF800F58FAE /* DKShareV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKShareV.h; sourceTree = "<group>"; };
+		863DF3D0250F6DF800F58FAE /* DKShareV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKShareV.m; sourceTree = "<group>"; };
 		8646CD2024F896E2000CCFC7 /* DKDropBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKDropBtn.h; sourceTree = "<group>"; };
 		8646CD2124F896E2000CCFC7 /* DKDropBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKDropBtn.m; sourceTree = "<group>"; };
 		8646CD2324F8AF6A000CCFC7 /* DKCountDownBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKCountDownBtn.h; sourceTree = "<group>"; };
@@ -232,7 +240,6 @@
 		864E33B924EA6BFD005F7583 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		864E33BA24EA6BFD005F7583 /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
 		864E33BB24EA6BFD005F7583 /* NSString+JLHDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JLHDate.m"; sourceTree = "<group>"; };
-		864E33BC24EA6BFD005F7583 /* NSObject+YJNetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YJNetRequest.m"; sourceTree = "<group>"; };
 		864E33BE24EA6BFD005F7583 /* NSString+DKFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DKFormat.h"; sourceTree = "<group>"; };
 		864E33BF24EA6BFD005F7583 /* NSString+AttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AttributedString.m"; sourceTree = "<group>"; };
 		864E33C224EA6BFD005F7583 /* DKNoneDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKNoneDataView.m; sourceTree = "<group>"; };
@@ -254,7 +261,6 @@
 		864E33D524EA6BFD005F7583 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		864E33D624EA6BFD005F7583 /* NSObject+CommonLogicDispose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CommonLogicDispose.h"; sourceTree = "<group>"; };
 		864E33D724EA6BFD005F7583 /* DKTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKTagView.m; sourceTree = "<group>"; };
-		864E33DD24EA6BFD005F7583 /* NSObject+YJNetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YJNetRequest.h"; sourceTree = "<group>"; };
 		864E33DF24EA6BFD005F7583 /* UITextView+WZB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+WZB.m"; sourceTree = "<group>"; };
 		864E33E024EA6BFD005F7583 /* UITextView+WZB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+WZB.h"; sourceTree = "<group>"; };
 		864E33E224EA6BFD005F7583 /* DZNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZNetworkHelper.m; sourceTree = "<group>"; };
@@ -702,6 +708,8 @@
 				8692C7EA2508E5FC003E2434 /* DKHomeCollectionFooterView.m */,
 				86FCB29E250E616F00FD59F1 /* DKTeacherTableViewCell.h */,
 				86FCB29F250E616F00FD59F1 /* DKTeacherTableViewCell.m */,
+				863DF3C8250F192700F58FAE /* DKLiveTableViewCell.h */,
+				863DF3C9250F192700F58FAE /* DKLiveTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -745,6 +753,17 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		863DF3CB250F4CA300F58FAE /* DKShareView */ = {
+			isa = PBXGroup;
+			children = (
+				863DF3CC250F4CC800F58FAE /* DKShareModel.h */,
+				863DF3CD250F4CC800F58FAE /* DKShareModel.m */,
+				863DF3CF250F6DF800F58FAE /* DKShareV.h */,
+				863DF3D0250F6DF800F58FAE /* DKShareV.m */,
+			);
+			path = DKShareView;
 			sourceTree = "<group>";
 		};
 		864E338924EA1BC9005F7583 /* Configurations */ = {
@@ -793,6 +812,7 @@
 		864E33A624EA6BFD005F7583 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				863DF3CB250F4CA300F58FAE /* DKShareView */,
 				864E33CC24EA6BFD005F7583 /* CBPopup */,
 				8646CD2324F8AF6A000CCFC7 /* DKCountDownBtn.h */,
 				8646CD2424F8AF6A000CCFC7 /* DKCountDownBtn.m */,
@@ -804,8 +824,6 @@
 				869CDA7D24F7A2DD0094D034 /* GHAttributesLabel */,
 				864E33D624EA6BFD005F7583 /* NSObject+CommonLogicDispose.h */,
 				864E33B724EA6BFD005F7583 /* NSObject+CommonLogicDispose.m */,
-				864E33DD24EA6BFD005F7583 /* NSObject+YJNetRequest.h */,
-				864E33BC24EA6BFD005F7583 /* NSObject+YJNetRequest.m */,
 				864E33AB24EA6BFD005F7583 /* NSString+AttributedString.h */,
 				864E33BF24EA6BFD005F7583 /* NSString+AttributedString.m */,
 				864E33BE24EA6BFD005F7583 /* NSString+DKFormat.h */,
@@ -1238,14 +1256,14 @@
 		864E347224EA6BFD005F7583 /* DXShareView */ = {
 			isa = PBXGroup;
 			children = (
-				864E347324EA6BFD005F7583 /* DXSharePlatform.m */,
-				864E347424EA6BFD005F7583 /* DXShareModel.h */,
-				864E347524EA6BFD005F7583 /* DXShareView.m */,
-				864E347624EA6BFD005F7583 /* DXShareButton.m */,
-				864E347724EA6BFD005F7583 /* DXSharePlatform.h */,
 				864E347824EA6BFD005F7583 /* DXShareButton.h */,
+				864E347624EA6BFD005F7583 /* DXShareButton.m */,
+				864E347424EA6BFD005F7583 /* DXShareModel.h */,
 				864E347924EA6BFD005F7583 /* DXShareModel.m */,
+				864E347724EA6BFD005F7583 /* DXSharePlatform.h */,
+				864E347324EA6BFD005F7583 /* DXSharePlatform.m */,
 				864E347A24EA6BFD005F7583 /* DXShareView.h */,
+				864E347524EA6BFD005F7583 /* DXShareView.m */,
 			);
 			path = DXShareView;
 			sourceTree = "<group>";
@@ -1677,6 +1695,7 @@
 				864E34ED24EA6BFD005F7583 /* SGPageTitleViewConfigure.m in Sources */,
 				864E350224EA6BFD005F7583 /* YYMemoryCache.m in Sources */,
 				864E350A24EA6BFD005F7583 /* UIColor+JM.m in Sources */,
+				863DF3D1250F6DF800F58FAE /* DKShareV.m in Sources */,
 				864E34C624EA6BFD005F7583 /* NSDate+BRPickerView.m in Sources */,
 				864E34C324EA6BFD005F7583 /* DKWKWebViewBsseViewController.m in Sources */,
 				8692C7EB2508E5FC003E2434 /* DKHomeCollectionFooterView.m in Sources */,
@@ -1742,6 +1761,7 @@
 				864E350B24EA6BFD005F7583 /* JMTabBar.m in Sources */,
 				864E34BA24EA6BFD005F7583 /* UIViewController+PopoutProcess.m in Sources */,
 				8692C7E82508E5E2003E2434 /* ZFJRollView.m in Sources */,
+				863DF3CA250F192700F58FAE /* DKLiveTableViewCell.m in Sources */,
 				86C6A29A24E37C38002C26F8 /* main.m in Sources */,
 				864E34B824EA6BFD005F7583 /* WSLWaterFlowLayout.m in Sources */,
 				86B9D92924F9E83A00113CE7 /* DKRegisterStep2ViewController.m in Sources */,
@@ -1761,7 +1781,6 @@
 				864E34C024EA6BFD005F7583 /* DZNetwork.m in Sources */,
 				864E34F124EA6BFD005F7583 /* XHWebImageAutoSizeCache.m in Sources */,
 				864E34B424EA6BFD005F7583 /* NSObject+ToolClass.m in Sources */,
-				864E34AE24EA6BFD005F7583 /* NSObject+YJNetRequest.m in Sources */,
 				864E34C424EA6BFD005F7583 /* NSObject+DKWKWebViewModel.m in Sources */,
 				864E34B024EA6BFD005F7583 /* NSString+AttributedString.m in Sources */,
 				8646CD2224F896E2000CCFC7 /* DKDropBtn.m in Sources */,
@@ -1784,6 +1803,7 @@
 				864E34DB24EA6BFD005F7583 /* EasyAlertPart.m in Sources */,
 				864E34FB24EA6BFD005F7583 /* DXShareButton.m in Sources */,
 				864E350424EA6BFD005F7583 /* PPNetworkCache.m in Sources */,
+				863DF3CE250F4CC800F58FAE /* DKShareModel.m in Sources */,
 				86FCB29D250E5C6400FD59F1 /* DKLiveListVC.m in Sources */,
 				864E34F024EA6BFD005F7583 /* DKNotNetWorkHintView.m in Sources */,
 				864E350324EA6BFD005F7583 /* PPNetworkHelper.m in Sources */,
@@ -1995,7 +2015,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 879WUTFN6B;
+				DEVELOPMENT_TEAM = Y3T5VE5F9F;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BeelinkC/Configurations/BeelinkC-Prefix.pch";
 				INFOPLIST_FILE = BeelinkC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2015,7 +2035,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 879WUTFN6B;
+				DEVELOPMENT_TEAM = Y3T5VE5F9F;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BeelinkC/Configurations/BeelinkC-Prefix.pch";
 				INFOPLIST_FILE = BeelinkC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

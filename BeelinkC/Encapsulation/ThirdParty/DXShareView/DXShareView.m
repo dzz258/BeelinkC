@@ -112,8 +112,8 @@ static CGFloat const DXShreCancelHeight = 40.f;
 }
 
 //#pragma mark - 点击了分享按钮
-//-(void)clickShare:(UIButton *)sender
-//{
+-(void)clickShare:(UIButton *)sender
+{
 //    #warning 本人用的友盟社会化分享组件
 ////    [NSObject wx_shareType:WXSceneSession title:@"分享标题" desc:@"分享内容分享内容分享内容分享内容分享内容分享内容分享内容分享内容分享内容" url:@"https://www.baidu.com" img:@"Invite"];
 //
@@ -151,7 +151,7 @@ static CGFloat const DXShreCancelHeight = 40.f;
 //            break;
 //    }
 //    [self closeShareView];
-//}
+}
 
 #warning 以下注释代码 需导入友盟社会化分享组件
 #pragma mark - 分享链接到三方平台

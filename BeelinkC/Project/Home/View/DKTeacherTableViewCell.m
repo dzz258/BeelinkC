@@ -25,7 +25,6 @@
 @property (nonatomic, strong) UILabel *canLangueL;
 @property (nonatomic, strong) UIView *canLangueValV;
 
-
 @end
 
 @implementation DKTeacherTableViewCell
@@ -175,7 +174,8 @@
 -(UIImageView *)teachLangueImaegV{
     if (!_teachLangueImaegV) {
         _teachLangueImaegV = [[UIImageView alloc] init];
-        _teachLangueImaegV.backgroundColor = [UIColor redColor];
+//        _teachLangueImaegV.backgroundColor = [UIColor redColor];
+        _teachLangueImaegV.image = KImage(@"langue_icon");
     }
     return _teachLangueImaegV;
 }
@@ -183,7 +183,8 @@
 -(UIImageView *)canLangueImaegV{
     if (!_canLangueImaegV) {
         _canLangueImaegV = [[UIImageView alloc] init];
-        _canLangueImaegV.backgroundColor = [UIColor redColor];
+//        _canLangueImaegV.backgroundColor = [UIColor redColor];
+        _canLangueImaegV.image = KImage(@"langue_icon");
     }
     return _canLangueImaegV;
 }

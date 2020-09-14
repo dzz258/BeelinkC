@@ -75,7 +75,7 @@
     
 
     UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    rightBtn.backgroundColor = [UIColor redColor];
+    [rightBtn setImage:KImage(@"home_right_icon") forState:UIControlStateNormal];
     [nav_view addSubview:rightBtn];
     
     [searchBtn mas_makeConstraints:^(MASConstraintMaker *make) {
