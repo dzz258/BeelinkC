@@ -12,6 +12,8 @@
 #import "DKHomeCollectionHeaderView.h"
 #import "DKHomeCollectionFooterView.h"
 #import "DKSearchViewController.h"
+#import "DKShareV.h"
+#import <SPAlertController.h>
 
 @interface DKHomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,WSLWaterFlowLayoutDelegate,ZFJRollViewDelegate>
 @property (nonatomic, strong) UICollectionView *collevtionview;
@@ -111,6 +113,23 @@
     }];
 }
 -(void)searchVC{
+    DKShareModel *shareM = [DKShareModel new];
+//    shareM.titleModel = [DKTitleModel new];
+    DKShareV *shareV = [[DKShareV alloc] initModel:shareM];
+
+    //    SPAlertController *alerController = [SPAlertController alertControllerWithTitle:@"" message:@"" preferredStyle:SPAlertControllerStyleAlert animationType:SPAlertAnimationTypeAlpha customView:hintV];
+    //    alerController.cornerRadiusForAlert = 10.f;
+    //    //关闭点击蒙版消失
+    //    alerController.tapBackgroundViewDismiss = NO;
+        SPAlertController *alerController = [SPAlertController alertControllerWithCustomAlertView:shareV preferredStyle:SPAlertControllerStyleActionSheet animationType:SPAlertAnimationTypeFromBottom];
+        alerController.cornerRadiusForAlert = 10.f;
+        //关闭点击蒙版消失
+//        alerController.tapBackgroundViewDismiss = NO;
+        alerController.needDialogBlur = NO;
+        [alerController setBackgroundViewAppearanceStyle:SPBackgroundViewAppearanceStyleTranslucent alpha:0.8];
+
+        [self presentViewController:alerController animated:YES completion:nil];
+    return;
     DKSearchViewController *productListVC = [[DKSearchViewController alloc] init];
     productListVC.isHideNav = YES;
     [self.navigationController pushViewController:productListVC animated:YES];

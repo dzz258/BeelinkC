@@ -127,6 +127,7 @@
 		864E351A24EA6D9A005F7583 /* DKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E351324EA6D9A005F7583 /* DKLoginViewController.m */; };
 		864E351B24EA6D9A005F7583 /* DKUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E351724EA6D9A005F7583 /* DKUserInfo.m */; };
 		864E352124EA7872005F7583 /* UIColor+DKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E352024EA7872005F7583 /* UIColor+DKColor.m */; };
+		866FD2352510996F005B6DD6 /* DKShareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 866FD2342510996F005B6DD6 /* DKShareButton.m */; };
 		8692C7E22508DA6B003E2434 /* DKHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692C7E12508DA6B003E2434 /* DKHomeCollectionViewCell.m */; };
 		8692C7E52508DC33003E2434 /* DKHomeCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692C7E42508DC33003E2434 /* DKHomeCollectionHeaderView.m */; };
 		8692C7E82508E5E2003E2434 /* ZFJRollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692C7E72508E5E2003E2434 /* ZFJRollView.m */; };
@@ -427,6 +428,8 @@
 		864E351724EA6D9A005F7583 /* DKUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKUserInfo.m; sourceTree = "<group>"; };
 		864E351F24EA7872005F7583 /* UIColor+DKColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+DKColor.h"; sourceTree = "<group>"; };
 		864E352024EA7872005F7583 /* UIColor+DKColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DKColor.m"; sourceTree = "<group>"; };
+		866FD2332510996F005B6DD6 /* DKShareButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKShareButton.h; sourceTree = "<group>"; };
+		866FD2342510996F005B6DD6 /* DKShareButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKShareButton.m; sourceTree = "<group>"; };
 		8692C7E02508DA6B003E2434 /* DKHomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKHomeCollectionViewCell.h; sourceTree = "<group>"; };
 		8692C7E12508DA6B003E2434 /* DKHomeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKHomeCollectionViewCell.m; sourceTree = "<group>"; };
 		8692C7E32508DC33003E2434 /* DKHomeCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKHomeCollectionHeaderView.h; sourceTree = "<group>"; };
@@ -762,6 +765,8 @@
 				863DF3CD250F4CC800F58FAE /* DKShareModel.m */,
 				863DF3CF250F6DF800F58FAE /* DKShareV.h */,
 				863DF3D0250F6DF800F58FAE /* DKShareV.m */,
+				866FD2332510996F005B6DD6 /* DKShareButton.h */,
+				866FD2342510996F005B6DD6 /* DKShareButton.m */,
 			);
 			path = DKShareView;
 			sourceTree = "<group>";
@@ -1692,6 +1697,7 @@
 				864E34EA24EA6BFD005F7583 /* SGPageContentScrollView.m in Sources */,
 				864E34F524EA6BFD005F7583 /* XHWebImageAutoSize.m in Sources */,
 				864E34DA24EA6BFD005F7583 /* EasyAlertGlobalConfig.m in Sources */,
+				866FD2352510996F005B6DD6 /* DKShareButton.m in Sources */,
 				864E34ED24EA6BFD005F7583 /* SGPageTitleViewConfigure.m in Sources */,
 				864E350224EA6BFD005F7583 /* YYMemoryCache.m in Sources */,
 				864E350A24EA6BFD005F7583 /* UIColor+JM.m in Sources */,

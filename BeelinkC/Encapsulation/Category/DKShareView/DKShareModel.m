@@ -11,3 +11,7 @@
 @implementation DKShareModel
 
 @end
+
+@implementation DKTitleModel
+
+@end

@@ -9,11 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "DKShareModel.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface DKShareV : UIView
 
 -(instancetype)initModel:(DKShareModel *)shareModel;
-@end
 
-NS_ASSUME_NONNULL_END
+@end

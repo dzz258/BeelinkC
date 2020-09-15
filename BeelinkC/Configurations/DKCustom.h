@@ -32,6 +32,7 @@ static int DebugEnvironment = 0;  // 1、调试 部分按钮跳过  0 正式使�
 #define color_gray6 kColor(@"#666666",@"#ffffff")
 #define color_n_gray67 kColor(@"#e5e5e5", @"")
 #define color_n_gray7 kColor(@"#eeeeee", @"")
+#define color_gray75 kColor(@"#b3b3b3",@"#ffffff")
 #define color_gray8 kColor(@"#999999",@"#ffffff")
 #define color_n_gray8 kColor(@"#999999",@"")
 
