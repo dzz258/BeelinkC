@@ -14,6 +14,7 @@
 #import "DKSearchViewController.h"
 #import "DKShareV.h"
 #import <SPAlertController.h>
+#import "DKTeacherInfoViewController.h"
 
 @interface DKHomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,WSLWaterFlowLayoutDelegate,ZFJRollViewDelegate>
 @property (nonatomic, strong) UICollectionView *collevtionview;
@@ -266,6 +267,9 @@
     //    productListVC.code = [NSString null_str:model[@"category_code"]];
     //    productListVC.isHideNav = YES;
     //    [self.navigationController pushViewController:productListVC animated:YES];
+    DKTeacherInfoViewController *teacherInfoVC = [[DKTeacherInfoViewController alloc] init];
+    teacherInfoVC.isHideNav = YES;
+    [self.navigationController pushViewController:teacherInfoVC animated:YES];
     NSLog(@"%@",indexPath);
 }
 

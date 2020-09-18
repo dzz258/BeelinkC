@@ -42,7 +42,7 @@
     return kWidth_fact(107);
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    kWeakSelf(self);
+//    kWeakSelf(self);
     DKTeacherTableViewCell *cell = [DKTeacherTableViewCell cellFromTableView:tableView];
     return cell;
 }

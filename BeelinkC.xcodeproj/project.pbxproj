@@ -16,6 +16,14 @@
 		863DF3CA250F192700F58FAE /* DKLiveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 863DF3C9250F192700F58FAE /* DKLiveTableViewCell.m */; };
 		863DF3CE250F4CC800F58FAE /* DKShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 863DF3CD250F4CC800F58FAE /* DKShareModel.m */; };
 		863DF3D1250F6DF800F58FAE /* DKShareV.m in Sources */ = {isa = PBXBuildFile; fileRef = 863DF3D0250F6DF800F58FAE /* DKShareV.m */; };
+		8644C98B2511EDB30020C149 /* DKTeacherListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8644C9862511EDB30020C149 /* DKTeacherListVC.m */; };
+		8644C98C2511EDB30020C149 /* DKTeacherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8644C9892511EDB30020C149 /* DKTeacherTableViewCell.m */; };
+		8644C98F2511F0750020C149 /* DKTeacherInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8644C98E2511F0750020C149 /* DKTeacherInfoViewController.m */; };
+		8644C9922511F20C0020C149 /* DKTeacherInfoStyle1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8644C9912511F20C0020C149 /* DKTeacherInfoStyle1TableViewCell.m */; };
+		8644C9952511F2160020C149 /* DKTeacherInfoStyle2TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8644C9942511F2160020C149 /* DKTeacherInfoStyle2TableViewCell.m */; };
+		8644C9982511F2210020C149 /* DKTeacherInfoStyle3TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8644C9972511F2210020C149 /* DKTeacherInfoStyle3TableViewCell.m */; };
+		8644C99B2511F22A0020C149 /* DKTeacherInfoStyle4TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8644C99A2511F22A0020C149 /* DKTeacherInfoStyle4TableViewCell.m */; };
+		8644C99E2511F3050020C149 /* DKTeacherInfoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8644C99D2511F3050020C149 /* DKTeacherInfoHeaderView.m */; };
 		8646CD2224F896E2000CCFC7 /* DKDropBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646CD2124F896E2000CCFC7 /* DKDropBtn.m */; };
 		8646CD2524F8AF6A000CCFC7 /* DKCountDownBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646CD2424F8AF6A000CCFC7 /* DKCountDownBtn.m */; };
 		864E338C24EA1BFF005F7583 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 864E338E24EA1BFF005F7583 /* Localizable.strings */; };
@@ -127,6 +135,7 @@
 		864E351A24EA6D9A005F7583 /* DKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E351324EA6D9A005F7583 /* DKLoginViewController.m */; };
 		864E351B24EA6D9A005F7583 /* DKUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E351724EA6D9A005F7583 /* DKUserInfo.m */; };
 		864E352124EA7872005F7583 /* UIColor+DKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E352024EA7872005F7583 /* UIColor+DKColor.m */; };
+		8659633B2514613A0063BC17 /* LEEStarRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 865963392514613A0063BC17 /* LEEStarRating.m */; };
 		866FD2352510996F005B6DD6 /* DKShareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 866FD2342510996F005B6DD6 /* DKShareButton.m */; };
 		8692C7E22508DA6B003E2434 /* DKHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692C7E12508DA6B003E2434 /* DKHomeCollectionViewCell.m */; };
 		8692C7E52508DC33003E2434 /* DKHomeCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8692C7E42508DC33003E2434 /* DKHomeCollectionHeaderView.m */; };
@@ -157,10 +166,8 @@
 		86C6A2AF24E37C38002C26F8 /* BeelinkCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C6A2AE24E37C38002C26F8 /* BeelinkCUITests.m */; };
 		86FCB291250E2C1F00FD59F1 /* DKSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FCB290250E2C1F00FD59F1 /* DKSearchViewController.m */; };
 		86FCB294250E335D00FD59F1 /* DKSearchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FCB293250E335D00FD59F1 /* DKSearchListViewController.m */; };
-		86FCB297250E5C0A00FD59F1 /* DKTeacherListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FCB296250E5C0A00FD59F1 /* DKTeacherListVC.m */; };
 		86FCB29A250E5C3500FD59F1 /* DKVideoListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FCB299250E5C3500FD59F1 /* DKVideoListVC.m */; };
 		86FCB29D250E5C6400FD59F1 /* DKLiveListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FCB29C250E5C6400FD59F1 /* DKLiveListVC.m */; };
-		86FCB2A0250E616F00FD59F1 /* DKTeacherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FCB29F250E616F00FD59F1 /* DKTeacherTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,6 +207,22 @@
 		863DF3CD250F4CC800F58FAE /* DKShareModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKShareModel.m; sourceTree = "<group>"; };
 		863DF3CF250F6DF800F58FAE /* DKShareV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKShareV.h; sourceTree = "<group>"; };
 		863DF3D0250F6DF800F58FAE /* DKShareV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKShareV.m; sourceTree = "<group>"; };
+		8644C9852511EDB30020C149 /* DKTeacherListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKTeacherListVC.h; sourceTree = "<group>"; };
+		8644C9862511EDB30020C149 /* DKTeacherListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKTeacherListVC.m; sourceTree = "<group>"; };
+		8644C9892511EDB30020C149 /* DKTeacherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKTeacherTableViewCell.m; sourceTree = "<group>"; };
+		8644C98A2511EDB30020C149 /* DKTeacherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKTeacherTableViewCell.h; sourceTree = "<group>"; };
+		8644C98D2511F0750020C149 /* DKTeacherInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKTeacherInfoViewController.h; sourceTree = "<group>"; };
+		8644C98E2511F0750020C149 /* DKTeacherInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKTeacherInfoViewController.m; sourceTree = "<group>"; };
+		8644C9902511F20C0020C149 /* DKTeacherInfoStyle1TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKTeacherInfoStyle1TableViewCell.h; sourceTree = "<group>"; };
+		8644C9912511F20C0020C149 /* DKTeacherInfoStyle1TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKTeacherInfoStyle1TableViewCell.m; sourceTree = "<group>"; };
+		8644C9932511F2160020C149 /* DKTeacherInfoStyle2TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKTeacherInfoStyle2TableViewCell.h; sourceTree = "<group>"; };
+		8644C9942511F2160020C149 /* DKTeacherInfoStyle2TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKTeacherInfoStyle2TableViewCell.m; sourceTree = "<group>"; };
+		8644C9962511F2210020C149 /* DKTeacherInfoStyle3TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKTeacherInfoStyle3TableViewCell.h; sourceTree = "<group>"; };
+		8644C9972511F2210020C149 /* DKTeacherInfoStyle3TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKTeacherInfoStyle3TableViewCell.m; sourceTree = "<group>"; };
+		8644C9992511F22A0020C149 /* DKTeacherInfoStyle4TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKTeacherInfoStyle4TableViewCell.h; sourceTree = "<group>"; };
+		8644C99A2511F22A0020C149 /* DKTeacherInfoStyle4TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKTeacherInfoStyle4TableViewCell.m; sourceTree = "<group>"; };
+		8644C99C2511F3050020C149 /* DKTeacherInfoHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKTeacherInfoHeaderView.h; sourceTree = "<group>"; };
+		8644C99D2511F3050020C149 /* DKTeacherInfoHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKTeacherInfoHeaderView.m; sourceTree = "<group>"; };
 		8646CD2024F896E2000CCFC7 /* DKDropBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKDropBtn.h; sourceTree = "<group>"; };
 		8646CD2124F896E2000CCFC7 /* DKDropBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKDropBtn.m; sourceTree = "<group>"; };
 		8646CD2324F8AF6A000CCFC7 /* DKCountDownBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKCountDownBtn.h; sourceTree = "<group>"; };
@@ -428,6 +451,8 @@
 		864E351724EA6D9A005F7583 /* DKUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKUserInfo.m; sourceTree = "<group>"; };
 		864E351F24EA7872005F7583 /* UIColor+DKColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+DKColor.h"; sourceTree = "<group>"; };
 		864E352024EA7872005F7583 /* UIColor+DKColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DKColor.m"; sourceTree = "<group>"; };
+		865963392514613A0063BC17 /* LEEStarRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEEStarRating.m; sourceTree = "<group>"; };
+		8659633A2514613A0063BC17 /* LEEStarRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEEStarRating.h; sourceTree = "<group>"; };
 		866FD2332510996F005B6DD6 /* DKShareButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKShareButton.h; sourceTree = "<group>"; };
 		866FD2342510996F005B6DD6 /* DKShareButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKShareButton.m; sourceTree = "<group>"; };
 		8692C7E02508DA6B003E2434 /* DKHomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKHomeCollectionViewCell.h; sourceTree = "<group>"; };
@@ -484,14 +509,10 @@
 		86FCB290250E2C1F00FD59F1 /* DKSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSearchViewController.m; sourceTree = "<group>"; };
 		86FCB292250E335D00FD59F1 /* DKSearchListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSearchListViewController.h; sourceTree = "<group>"; };
 		86FCB293250E335D00FD59F1 /* DKSearchListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSearchListViewController.m; sourceTree = "<group>"; };
-		86FCB295250E5C0A00FD59F1 /* DKTeacherListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKTeacherListVC.h; sourceTree = "<group>"; };
-		86FCB296250E5C0A00FD59F1 /* DKTeacherListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKTeacherListVC.m; sourceTree = "<group>"; };
 		86FCB298250E5C3500FD59F1 /* DKVideoListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKVideoListVC.h; sourceTree = "<group>"; };
 		86FCB299250E5C3500FD59F1 /* DKVideoListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKVideoListVC.m; sourceTree = "<group>"; };
 		86FCB29B250E5C6400FD59F1 /* DKLiveListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKLiveListVC.h; sourceTree = "<group>"; };
 		86FCB29C250E5C6400FD59F1 /* DKLiveListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKLiveListVC.m; sourceTree = "<group>"; };
-		86FCB29E250E616F00FD59F1 /* DKTeacherTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKTeacherTableViewCell.h; sourceTree = "<group>"; };
-		86FCB29F250E616F00FD59F1 /* DKTeacherTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKTeacherTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -681,8 +702,6 @@
 				86FCB290250E2C1F00FD59F1 /* DKSearchViewController.m */,
 				86FCB292250E335D00FD59F1 /* DKSearchListViewController.h */,
 				86FCB293250E335D00FD59F1 /* DKSearchListViewController.m */,
-				86FCB295250E5C0A00FD59F1 /* DKTeacherListVC.h */,
-				86FCB296250E5C0A00FD59F1 /* DKTeacherListVC.m */,
 				86FCB298250E5C3500FD59F1 /* DKVideoListVC.h */,
 				86FCB299250E5C3500FD59F1 /* DKVideoListVC.m */,
 				86FCB29B250E5C6400FD59F1 /* DKLiveListVC.h */,
@@ -709,8 +728,6 @@
 				8692C7E42508DC33003E2434 /* DKHomeCollectionHeaderView.m */,
 				8692C7E92508E5FC003E2434 /* DKHomeCollectionFooterView.h */,
 				8692C7EA2508E5FC003E2434 /* DKHomeCollectionFooterView.m */,
-				86FCB29E250E616F00FD59F1 /* DKTeacherTableViewCell.h */,
-				86FCB29F250E616F00FD59F1 /* DKTeacherTableViewCell.m */,
 				863DF3C8250F192700F58FAE /* DKLiveTableViewCell.h */,
 				863DF3C9250F192700F58FAE /* DKLiveTableViewCell.m */,
 			);
@@ -769,6 +786,61 @@
 				866FD2342510996F005B6DD6 /* DKShareButton.m */,
 			);
 			path = DKShareView;
+			sourceTree = "<group>";
+		};
+		8644C9822511EDB30020C149 /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+				8644C9832511EDB30020C149 /* ViewModel */,
+				8644C9842511EDB30020C149 /* ViewContoller */,
+				8644C9872511EDB30020C149 /* Model */,
+				8644C9882511EDB30020C149 /* View */,
+			);
+			path = Teacher;
+			sourceTree = "<group>";
+		};
+		8644C9832511EDB30020C149 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8644C9842511EDB30020C149 /* ViewContoller */ = {
+			isa = PBXGroup;
+			children = (
+				8644C9852511EDB30020C149 /* DKTeacherListVC.h */,
+				8644C9862511EDB30020C149 /* DKTeacherListVC.m */,
+				8644C98D2511F0750020C149 /* DKTeacherInfoViewController.h */,
+				8644C98E2511F0750020C149 /* DKTeacherInfoViewController.m */,
+			);
+			path = ViewContoller;
+			sourceTree = "<group>";
+		};
+		8644C9872511EDB30020C149 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8644C9882511EDB30020C149 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8644C98A2511EDB30020C149 /* DKTeacherTableViewCell.h */,
+				8644C9892511EDB30020C149 /* DKTeacherTableViewCell.m */,
+				8644C9902511F20C0020C149 /* DKTeacherInfoStyle1TableViewCell.h */,
+				8644C9912511F20C0020C149 /* DKTeacherInfoStyle1TableViewCell.m */,
+				8644C9932511F2160020C149 /* DKTeacherInfoStyle2TableViewCell.h */,
+				8644C9942511F2160020C149 /* DKTeacherInfoStyle2TableViewCell.m */,
+				8644C9962511F2210020C149 /* DKTeacherInfoStyle3TableViewCell.h */,
+				8644C9972511F2210020C149 /* DKTeacherInfoStyle3TableViewCell.m */,
+				8644C9992511F22A0020C149 /* DKTeacherInfoStyle4TableViewCell.h */,
+				8644C99A2511F22A0020C149 /* DKTeacherInfoStyle4TableViewCell.m */,
+				8644C99C2511F3050020C149 /* DKTeacherInfoHeaderView.h */,
+				8644C99D2511F3050020C149 /* DKTeacherInfoHeaderView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		864E338924EA1BC9005F7583 /* Configurations */ = {
@@ -949,6 +1021,7 @@
 		864E33EC24EA6BFD005F7583 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				865963382514613A0063BC17 /* LEEStarRating */,
 				864E33ED24EA6BFD005F7583 /* DZWKWebView */,
 				864E33F324EA6BFD005F7583 /* BRPickerView */,
 				864E340724EA6BFD005F7583 /* EasyShowView */,
@@ -1345,6 +1418,7 @@
 		864E350D24EA6D9A005F7583 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				8644C9822511EDB30020C149 /* Teacher */,
 				8602B85D2507A15E0048445C /* Home */,
 				8602B8532507A15D0048445C /* Live */,
 				8602B84E2507A15D0048445C /* Mine */,
@@ -1418,6 +1492,15 @@
 				8646CD2124F896E2000CCFC7 /* DKDropBtn.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		865963382514613A0063BC17 /* LEEStarRating */ = {
+			isa = PBXGroup;
+			children = (
+				865963392514613A0063BC17 /* LEEStarRating.m */,
+				8659633A2514613A0063BC17 /* LEEStarRating.h */,
+			);
+			path = LEEStarRating;
 			sourceTree = "<group>";
 		};
 		869CDA7124F7567E0094D034 /* Images */ = {
@@ -1691,6 +1774,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8644C9952511F2160020C149 /* DKTeacherInfoStyle2TableViewCell.m in Sources */,
 				864E34FD24EA6BFD005F7583 /* UITextView+XMExtension.m in Sources */,
 				869CDA7624F75A7A0094D034 /* DKLoginMobileV.m in Sources */,
 				864E34EC24EA6BFD005F7583 /* SGPageTitleView.m in Sources */,
@@ -1699,6 +1783,7 @@
 				864E34DA24EA6BFD005F7583 /* EasyAlertGlobalConfig.m in Sources */,
 				866FD2352510996F005B6DD6 /* DKShareButton.m in Sources */,
 				864E34ED24EA6BFD005F7583 /* SGPageTitleViewConfigure.m in Sources */,
+				8644C98B2511EDB30020C149 /* DKTeacherListVC.m in Sources */,
 				864E350224EA6BFD005F7583 /* YYMemoryCache.m in Sources */,
 				864E350A24EA6BFD005F7583 /* UIColor+JM.m in Sources */,
 				863DF3D1250F6DF800F58FAE /* DKShareV.m in Sources */,
@@ -1736,11 +1821,12 @@
 				86BB7C152501DBEC006859DD /* DKForgetStep3ViewController.m in Sources */,
 				864E34E124EA6BFD005F7583 /* EasyLodingConfig.m in Sources */,
 				86BB7C0F2501DBD5006859DD /* DKForgetStep1ViewController.m in Sources */,
+				8644C99B2511F22A0020C149 /* DKTeacherInfoStyle4TableViewCell.m in Sources */,
 				864E34A024EA6BFD005F7583 /* DKBaseTableViewCell.m in Sources */,
 				864E34EB24EA6BFD005F7583 /* SGPageContentCollectionView.m in Sources */,
 				864E34D324EA6BFD005F7583 /* EasyEmptyPart.m in Sources */,
-				86FCB2A0250E616F00FD59F1 /* DKTeacherTableViewCell.m in Sources */,
 				869CDA8024F7A2DD0094D034 /* GHAttributesLabel.m in Sources */,
+				8659633B2514613A0063BC17 /* LEEStarRating.m in Sources */,
 				864E34F624EA6BFD005F7583 /* UINavigationSXFixSpace.m in Sources */,
 				864E350824EA6BFD005F7583 /* UIView+JM.m in Sources */,
 				864E34F724EA6BFD005F7583 /* UIViewController+BarButton.m in Sources */,
@@ -1751,6 +1837,7 @@
 				864E350924EA6BFD005F7583 /* CAAnimation+JMAnimation.m in Sources */,
 				864E34C924EA6BFD005F7583 /* BRAddressModel.m in Sources */,
 				8602B8752507A1E80048445C /* DKVideoViewController.m in Sources */,
+				8644C98C2511EDB30020C149 /* DKTeacherTableViewCell.m in Sources */,
 				864E34C524EA6BFD005F7583 /* BRStringPickerView.m in Sources */,
 				864E34F824EA6BFD005F7583 /* NSObject+SXRuntime.m in Sources */,
 				864E34D424EA6BFD005F7583 /* EasyEmptyGlobalConfig.m in Sources */,
@@ -1759,12 +1846,14 @@
 				864E34CE24EA6BFD005F7583 /* EasyTextGlobalConfig.m in Sources */,
 				864E34D524EA6BFD005F7583 /* EasyEmptyTypes.m in Sources */,
 				8692C7E52508DC33003E2434 /* DKHomeCollectionHeaderView.m in Sources */,
+				8644C98F2511F0750020C149 /* DKTeacherInfoViewController.m in Sources */,
 				864E34BB24EA6BFD005F7583 /* DKTagView.m in Sources */,
 				864E34F424EA6BFD005F7583 /* XHWebImageAutoSizeConst.m in Sources */,
 				8602B8692507A17A0048445C /* DKHomeViewController.m in Sources */,
 				864E34A524EA6BFD005F7583 /* UIViewController+XHPhoto.m in Sources */,
 				864E34D824EA6BFD005F7583 /* EasyAlertView.m in Sources */,
 				864E350B24EA6BFD005F7583 /* JMTabBar.m in Sources */,
+				8644C9982511F2210020C149 /* DKTeacherInfoStyle3TableViewCell.m in Sources */,
 				864E34BA24EA6BFD005F7583 /* UIViewController+PopoutProcess.m in Sources */,
 				8692C7E82508E5E2003E2434 /* ZFJRollView.m in Sources */,
 				863DF3CA250F192700F58FAE /* DKLiveTableViewCell.m in Sources */,
@@ -1790,8 +1879,8 @@
 				864E34C424EA6BFD005F7583 /* NSObject+DKWKWebViewModel.m in Sources */,
 				864E34B024EA6BFD005F7583 /* NSString+AttributedString.m in Sources */,
 				8646CD2224F896E2000CCFC7 /* DKDropBtn.m in Sources */,
+				8644C9922511F20C0020C149 /* DKTeacherInfoStyle1TableViewCell.m in Sources */,
 				864E34DE24EA6BFD005F7583 /* UIView+EasyShowExt.m in Sources */,
-				86FCB297250E5C0A00FD59F1 /* DKTeacherListVC.m in Sources */,
 				86FCB291250E2C1F00FD59F1 /* DKSearchViewController.m in Sources */,
 				8692C7E22508DA6B003E2434 /* DKHomeCollectionViewCell.m in Sources */,
 				864E34BD24EA6BFD005F7583 /* UITextView+WZB.m in Sources */,
@@ -1829,6 +1918,7 @@
 				8602B8722507A1DC0048445C /* DKSubscribeViewController.m in Sources */,
 				864E34EE24EA6BFD005F7583 /* DKNotNetWorkHintViewController.m in Sources */,
 				864E34B924EA6BFD005F7583 /* UIImageView+CornerRadius.m in Sources */,
+				8644C99E2511F3050020C149 /* DKTeacherInfoHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
