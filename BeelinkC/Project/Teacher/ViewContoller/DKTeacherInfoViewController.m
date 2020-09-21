@@ -86,7 +86,7 @@
     if (indexPath.section == 1) {
         return kWidth_fact(140);
     }
-    return kWidth_fact(107);
+    return kWidth_fact(157);
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return kWidth_fact(45);
